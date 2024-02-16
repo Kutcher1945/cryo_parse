@@ -1,0 +1,12 @@
+[
+    {
+        "name": "weekday",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "День недели",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "weekday"
+    }
+]

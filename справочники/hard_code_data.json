@@ -1,0 +1,41 @@
+[
+    {
+        "name": "hard_code",
+        "type": "esriFieldTypeString",
+        "alias": "Тяжесть преступления",
+        "domain": {
+            "type": "codedValue",
+            "name": "hard_code_crime",
+            "description": "тяжесть преступления",
+            "codedValues": [
+                {
+                    "name": "небольшой тяжести",
+                    "code": "1"
+                },
+                {
+                    "name": "средней тяжести",
+                    "code": "2"
+                },
+                {
+                    "name": "тяжкие",
+                    "code": "3"
+                },
+                {
+                    "name": "особо тяжкие",
+                    "code": "4"
+                },
+                {
+                    "name": "не определено",
+                    "code": "0"
+                }
+            ],
+            "mergePolicy": "esriMPTDefaultValue",
+            "splitPolicy": "esriSPTDefaultValue"
+        },
+        "editable": true,
+        "nullable": true,
+        "length": 5,
+        "defaultValue": null,
+        "modelName": "hard_code"
+    }
+]

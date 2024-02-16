@@ -1,0 +1,13 @@
+[
+    {
+        "name": "tz1id",
+        "type": "esriFieldTypeString",
+        "alias": "Идентификатор заявления",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "tz1id"
+    }
+]

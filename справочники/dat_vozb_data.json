@@ -1,0 +1,13 @@
+[
+    {
+        "name": "dat_vozb",
+        "type": "esriFieldTypeDate",
+        "alias": "Дата КУЗИ",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 8,
+        "defaultValue": null,
+        "modelName": "dat_vozb"
+    }
+]

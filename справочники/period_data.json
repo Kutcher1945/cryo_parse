@@ -1,0 +1,12 @@
+[
+    {
+        "name": "period",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Месяц",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "period"
+    }
+]

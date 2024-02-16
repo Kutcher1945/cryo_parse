@@ -1,0 +1,13 @@
+[
+    {
+        "name": "organ_kz",
+        "type": "esriFieldTypeString",
+        "alias": "Орган регистрации KZ",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 300,
+        "defaultValue": null,
+        "modelName": "ORGAN_KZ"
+    }
+]

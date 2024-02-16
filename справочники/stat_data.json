@@ -1,0 +1,13 @@
+[
+    {
+        "name": "stat",
+        "type": "esriFieldTypeString",
+        "alias": "Статья УК",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "stat"
+    }
+]

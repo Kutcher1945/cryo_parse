@@ -1,0 +1,12 @@
+[
+    {
+        "name": "time_period",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Время совершения преступления",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "time_period"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fe1r32p1",
+        "type": "esriFieldTypeString",
+        "alias": "Объект посягательства",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "FE1R32P1"
+    }
+]

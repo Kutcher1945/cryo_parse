@@ -1,0 +1,13 @@
+[
+    {
+        "name": "organ",
+        "type": "esriFieldTypeString",
+        "alias": "Орган регистрации преступления",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 200,
+        "defaultValue": null,
+        "modelName": "organ"
+    }
+]

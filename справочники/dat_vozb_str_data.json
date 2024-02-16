@@ -1,0 +1,13 @@
+[
+    {
+        "name": "dat_vozb_str",
+        "type": "esriFieldTypeString",
+        "alias": "Дата КУЗИ строка",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "dat_vozb_str"
+    }
+]

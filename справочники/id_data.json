@@ -1,0 +1,12 @@
+[
+    {
+        "name": "id",
+        "type": "esriFieldTypeDouble",
+        "alias": "id",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "id"
+    }
+]

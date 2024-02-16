@@ -1,0 +1,13 @@
+[
+    {
+        "name": "org_code",
+        "type": "esriFieldTypeString",
+        "alias": "Код органа",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 40,
+        "defaultValue": null,
+        "modelName": "ORG_CODE"
+    }
+]

@@ -1,0 +1,3691 @@
+{
+    "currentVersion": 11.0,
+    "cimVersion": "3.0.0",
+    "id": 1,
+    "name": "crime",
+    "type": "Feature Layer",
+    "parentLayer": null,
+    "defaultVisibility": true,
+    "minScale": 0,
+    "maxScale": 0,
+    "canScaleSymbols": false,
+    "geometryType": "esriGeometryPoint",
+    "description": "",
+    "copyrightText": "",
+    "editFieldsInfo": null,
+    "ownershipBasedAccessControlForFeatures": null,
+    "syncCanReturnChanges": false,
+    "relationships": [],
+    "isDataVersioned": false,
+    "isDataArchived": false,
+    "infoInEstimates": [
+        "extent",
+        "count"
+    ],
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isCoGoEnabled": false,
+    "supportsRollbackOnFailureParameter": true,
+    "archivingInfo": {
+        "supportsQueryWithHistoricMoment": false,
+        "startArchivingMoment": -1
+    },
+    "supportsStatistics": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsAdvancedQueries": true,
+    "supportsValidateSQL": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsQuantizationEditMode": true,
+    "supportsCalculate": true,
+    "supportsASyncCalculate": true,
+    "supportsDatumTransformation": true,
+    "advancedQueryCapabilities": {
+        "supportsPagination": true,
+        "supportsTrueCurve": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsStatistics": true,
+        "supportsPercentileStatistics": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsDistinct": true,
+        "supportsCountDistinct": true,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": false,
+        "supportsSqlExpression": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsLod": false,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryAnalytic": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsLinearRegression": true,
+        "supportsAsync": false,
+        "supportsPercentileAnalytic": false
+    },
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsAsyncApplyEdits": true
+    },
+    "hasMetadata": true,
+    "extent": {
+        "xmin": 4792678.304058765,
+        "ymin": 55.53247486390175,
+        "xmax": 9809672.143444024,
+        "ymax": 7673028.377375152,
+        "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857,
+            "xyTolerance": 0.001,
+            "zTolerance": 0.001,
+            "mTolerance": 0.001,
+            "falseX": -20037700,
+            "falseY": -30241100,
+            "xyUnits": 10000,
+            "falseZ": -100000,
+            "zUnits": 10000,
+            "falseM": -100000,
+            "mUnits": 10000
+        }
+    },
+    "sourceSpatialReference": {
+        "wkid": 32642,
+        "latestWkid": 32642,
+        "xyTolerance": 0.001,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -5120900,
+        "falseY": -9998100,
+        "xyUnits": 10000,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+    },
+    "drawingInfo": {
+        "renderer": {
+            "type": "uniqueValue",
+            "field1": "hard_code",
+            "uniqueValueInfos": [
+                {
+                    "symbol": {
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "color": [
+                            200,
+                            252,
+                            192,
+                            255
+                        ],
+                        "size": 4,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.7
+                        }
+                    },
+                    "value": "0",
+                    "label": "не определено"
+                },
+                {
+                    "symbol": {
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "color": [
+                            255,
+                            255,
+                            0,
+                            255
+                        ],
+                        "size": 4,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.7
+                        }
+                    },
+                    "value": "1",
+                    "label": "небольшой тяжести"
+                },
+                {
+                    "symbol": {
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "color": [
+                            255,
+                            85,
+                            0,
+                            255
+                        ],
+                        "size": 4,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.7
+                        }
+                    },
+                    "value": "2",
+                    "label": "средней тяжести"
+                },
+                {
+                    "symbol": {
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "size": 4,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.7
+                        }
+                    },
+                    "value": "3",
+                    "label": "тяжкие"
+                },
+                {
+                    "symbol": {
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "color": [
+                            168,
+                            0,
+                            0,
+                            255
+                        ],
+                        "size": 4,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.7
+                        }
+                    },
+                    "value": "4",
+                    "label": "особо тяжкие"
+                }
+            ],
+            "fieldDelimiter": ",",
+            "authoringInfo": {
+                "colorRamp": {
+                    "type": "multipart",
+                    "colorRamps": [
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                202,
+                                252,
+                                224,
+                                255
+                            ],
+                            "toColor": [
+                                202,
+                                252,
+                                224,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                249,
+                                182,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                249,
+                                182,
+                                252,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                188,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                188,
+                                179,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                189,
+                                218,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                189,
+                                218,
+                                252,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                245,
+                                182,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                245,
+                                182,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                215,
+                                244,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                215,
+                                244,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                237,
+                                215,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                237,
+                                215,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                185,
+                                252,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                185,
+                                252,
+                                179,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                197,
+                                187,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                197,
+                                187,
+                                252,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                182,
+                                243,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                182,
+                                243,
+                                252,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                222,
+                                252,
+                                197,
+                                255
+                            ],
+                            "toColor": [
+                                222,
+                                252,
+                                197,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                179,
+                                202,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                179,
+                                202,
+                                255
+                            ]
+                        },
+                        {
+                            "type": "algorithmic",
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                214,
+                                184,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                214,
+                                184,
+                                255
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "scaleSymbols": true,
+        "transparency": 0,
+        "labelingInfo": null
+    },
+    "hasM": false,
+    "hasZ": false,
+    "allowGeometryUpdates": true,
+    "allowTrueCurvesUpdates": true,
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+    "hasAttachments": false,
+    "supportsApplyEditsWithGlobalIds": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "objectIdField": "objectid",
+    "globalIdField": "globalid",
+    "displayField": "crime_code",
+    "typeIdField": "hard_code",
+    "subtypeField": "",
+    "fields": [
+        {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null,
+            "editable": false,
+            "nullable": false,
+            "defaultValue": null,
+            "modelName": "objectid"
+        },
+        {
+            "name": "id",
+            "type": "esriFieldTypeDouble",
+            "alias": "id",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "defaultValue": null,
+            "modelName": "id"
+        },
+        {
+            "name": "yr",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Год",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "defaultValue": null,
+            "modelName": "yr"
+        },
+        {
+            "name": "period",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Месяц",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "defaultValue": null,
+            "modelName": "period"
+        },
+        {
+            "name": "crime_code",
+            "type": "esriFieldTypeString",
+            "alias": "CRIME_CODE",
+            "domain": {
+                "type": "codedValue",
+                "name": "code_crime",
+                "description": "код УК РК",
+                "codedValues": [
+                    {
+                        "name": "Убийство",
+                        "code": "0990"
+                    },
+                    {
+                        "name": "Нарушение режима особо охраняемых природных территорий",
+                        "code": "3420"
+                    },
+                    {
+                        "name": "Уничтожение или повреждение лесов",
+                        "code": "3410"
+                    },
+                    {
+                        "name": "Незаконная порубка, уничтожение или повреждение деревьев и кустарников",
+                        "code": "3400"
+                    },
+                    {
+                        "name": "Незаконная охота",
+                        "code": "3370"
+                    },
+                    {
+                        "name": "Незаконная добыча рыбных ресурсов, других водных животных или растений",
+                        "code": "3350"
+                    },
+                    {
+                        "name": "Нарушение правил охраны и использования недр",
+                        "code": "3330"
+                    },
+                    {
+                        "name": "Порча земли",
+                        "code": "3320"
+                    },
+                    {
+                        "name": "Загрязнение, засорение или истощение вод",
+                        "code": "3280"
+                    },
+                    {
+                        "name": "Нарушение ветеринарных правил или правил, установленных для борьбы с болезнями и вредителями растений",
+                        "code": "3270"
+                    },
+                    {
+                        "name": "Нарушение экологических требований при обращении с экологически потенциально опасными химическими или биологическими веществами",
+                        "code": "3250"
+                    },
+                    {
+                        "name": "Нарушение экологических требований к хозяйственной или иной деятельности",
+                        "code": "3240"
+                    },
+                    {
+                        "name": "Незаконное проведение искусственного прерывания беременности",
+                        "code": "3190"
+                    },
+                    {
+                        "name": "Надругательство над телами умерших и местами их захоронения",
+                        "code": "3140"
+                    },
+                    {
+                        "name": "Организация или содержание притонов для занятия проституцией и сводничество",
+                        "code": "3090"
+                    },
+                    {
+                        "name": "Организация незаконного игорного бизнеса",
+                        "code": "3070"
+                    },
+                    {
+                        "name": "Организация или содержание притонов для потребления наркотических средств, психотропных веществ, их аналогов и предоставление помещений для тех же целей",
+                        "code": "3020"
+                    },
+                    {
+                        "name": "Незаконное культивирование запрещенных к возделыванию растений, содержащих наркотические вещества",
+                        "code": "3000"
+                    },
+                    {
+                        "name": "Незаконные изготовление, переработка, приобретение, хранение, перевозка в целях сбыта, пересылка либо сбыт наркотических средств, психотропных веществ, их аналогов",
+                        "code": "2970"
+                    },
+                    {
+                        "name": "Незаконное обращение с наркотическими средствами, психотропными веществами, их аналогами без цели сбыта",
+                        "code": "2960"
+                    },
+                    {
+                        "name": "Вандализм",
+                        "code": "2940"
+                    },
+                    {
+                        "name": "Хулиганство",
+                        "code": "2930"
+                    },
+                    {
+                        "name": "Нарушение требований пожарной безопасности",
+                        "code": "2920"
+                    },
+                    {
+                        "name": "Хищение либо вымогательство оружия, боеприпасов, взрывчатых веществ и взрывных устройств",
+                        "code": "2910"
+                    },
+                    {
+                        "name": "Ненадлежащее исполнение обязанностей по охране оружия, боеприпасов, взрывчатых веществ или взрывных устройств",
+                        "code": "2900"
+                    },
+                    {
+                        "name": "Небрежное хранение огнестрельного оружия",
+                        "code": "2890"
+                    },
+                    {
+                        "name": "Незаконное изготовление оружия",
+                        "code": "2880"
+                    },
+                    {
+                        "name": "Незаконные приобретение, передача, сбыт, хранение, перевозка или ношение оружия, боеприпасов, взрывчатых веществ и взрывных устройств",
+                        "code": "2870"
+                    },
+                    {
+                        "name": "Контрабанда изъятых из обращения предметов или предметов, обращение которых ограничено",
+                        "code": "2860"
+                    },
+                    {
+                        "name": "Незаконное обращение с радиоактивными веществами, радиоактивными отходами, ядерными материалами",
+                        "code": "2830"
+                    },
+                    {
+                        "name": "Нарушение правил или требований нормативов в сфере архитектурной, градостроительной и строительной деятельности",
+                        "code": "2790"
+                    },
+                    {
+                        "name": "Недоброкачественное строительство",
+                        "code": "2780"
+                    },
+                    {
+                        "name": "Нарушение правил безопасности при ведении горных или строительных работ",
+                        "code": "2770"
+                    },
+                    {
+                        "name": "Вымогательство",
+                        "code": "1940"
+                    },
+                    {
+                        "name": "Хищение предметов, имеющих особую ценность",
+                        "code": "1930"
+                    },
+                    {
+                        "name": "Разбой",
+                        "code": "1920"
+                    },
+                    {
+                        "name": "Грабеж",
+                        "code": "1910"
+                    },
+                    {
+                        "name": "Мошенничество",
+                        "code": "1900"
+                    },
+                    {
+                        "name": "Присвоение или растрата вверенного чужого имущества",
+                        "code": "1890"
+                    },
+                    {
+                        "name": "Кража",
+                        "code": "1880"
+                    },
+                    {
+                        "name": "Мелкое хищение",
+                        "code": "1870"
+                    },
+                    {
+                        "name": "Нарушение неприкосновенности жилища",
+                        "code": "1490"
+                    },
+                    {
+                        "name": "Пытки",
+                        "code": "1460"
+                    },
+                    {
+                        "name": "Торговля людьми",
+                        "code": "1280"
+                    },
+                    {
+                        "name": "Незаконное лишение свободы",
+                        "code": "1260"
+                    },
+                    {
+                        "name": "Половое сношение или иные действия сексуального характера с лицом, не достигшим шестнадцатилетнего возраста",
+                        "code": "1220"
+                    },
+                    {
+                        "name": "Насильственные действия сексуального характера",
+                        "code": "1210"
+                    },
+                    {
+                        "name": "Изнасилование",
+                        "code": "1200"
+                    },
+                    {
+                        "name": "Оставление в опасности",
+                        "code": "1190"
+                    },
+                    {
+                        "name": "Неосторожное причинение вреда здоровью",
+                        "code": "1140"
+                    },
+                    {
+                        "name": "Причинение тяжкого вреда здоровью при задержании лица, совершившего преступление",
+                        "code": "1130"
+                    },
+                    {
+                        "name": "Причинение тяжкого вреда здоровью при превышении пределов необходимой обороны",
+                        "code": "1120"
+                    },
+                    {
+                        "name": "Причинение вреда здоровью в состоянии аффекта",
+                        "code": "1110"
+                    },
+                    {
+                        "name": "Умышленное причинение легкого вреда здоровью",
+                        "code": "1080"
+                    },
+                    {
+                        "name": "Умышленное причинение средней тяжести вреда здоровью",
+                        "code": "1070"
+                    },
+                    {
+                        "name": "Умышленное причинение тяжкого вреда здоровью",
+                        "code": "1060"
+                    },
+                    {
+                        "name": "Доведение до самоубийства",
+                        "code": "1050"
+                    },
+                    {
+                        "name": "Причинение смерти по неосторожности",
+                        "code": "1040"
+                    },
+                    {
+                        "name": "Убийство, совершенное при превышении мер, необходимых для задержания лица, совершившего преступление",
+                        "code": "1030"
+                    },
+                    {
+                        "name": "Убийство, совершенное при превышении пределов необходимой обороны",
+                        "code": "1020"
+                    },
+                    {
+                        "name": "Убийство, совершенное в состоянии аффекта",
+                        "code": "1010"
+                    },
+                    {
+                        "name": "Убийство матерью новорожденного ребенка",
+                        "code": "1000"
+                    },
+                    {
+                        "name": "Хищение либо вымогательство наркотических средств, психотропных веществ, их аналогов",
+                        "code": "2980"
+                    },
+                    {
+                        "name": "Склонение к потреблению наркотических средств, психотропных веществ, их аналогов",
+                        "code": "2990"
+                    },
+                    {
+                        "name": "Незаконный оборот ядовитых веществ, а также веществ, инструментов или оборудования, используемых для изготовления или переработки наркотических средств, психотропных веществ, их аналогов или ядовитых веществ",
+                        "code": "3010"
+                    },
+                    {
+                        "name": "Нарушение правил обращения с наркотическими средствами, психотропными или ядовитыми веществами",
+                        "code": "3030"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 10,
+            "defaultValue": null,
+            "modelName": "crime_code"
+        },
+        {
+            "name": "time_period",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Время совершения преступления",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "defaultValue": null,
+            "modelName": "time_period"
+        },
+        {
+            "name": "hard_code",
+            "type": "esriFieldTypeString",
+            "alias": "Тяжесть преступления",
+            "domain": {
+                "type": "codedValue",
+                "name": "hard_code_crime",
+                "description": "тяжесть преступления",
+                "codedValues": [
+                    {
+                        "name": "небольшой тяжести",
+                        "code": "1"
+                    },
+                    {
+                        "name": "средней тяжести",
+                        "code": "2"
+                    },
+                    {
+                        "name": "тяжкие",
+                        "code": "3"
+                    },
+                    {
+                        "name": "особо тяжкие",
+                        "code": "4"
+                    },
+                    {
+                        "name": "не определено",
+                        "code": "0"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 5,
+            "defaultValue": null,
+            "modelName": "hard_code"
+        },
+        {
+            "name": "ud",
+            "type": "esriFieldTypeString",
+            "alias": "№ КУЗИ",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "ud"
+        },
+        {
+            "name": "organ",
+            "type": "esriFieldTypeString",
+            "alias": "Орган регистрации преступления",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 200,
+            "defaultValue": null,
+            "modelName": "organ"
+        },
+        {
+            "name": "dat_vozb",
+            "type": "esriFieldTypeDate",
+            "alias": "Дата КУЗИ",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 8,
+            "defaultValue": null,
+            "modelName": "dat_vozb"
+        },
+        {
+            "name": "dat_sover",
+            "type": "esriFieldTypeDate",
+            "alias": "Дата совершения преступления",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 8,
+            "defaultValue": null,
+            "modelName": "dat_sover"
+        },
+        {
+            "name": "stat",
+            "type": "esriFieldTypeString",
+            "alias": "Статья УК",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "stat"
+        },
+        {
+            "name": "dat_vozb_str",
+            "type": "esriFieldTypeString",
+            "alias": "Дата КУЗИ строка",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "dat_vozb_str"
+        },
+        {
+            "name": "dat_sover_str",
+            "type": "esriFieldTypeString",
+            "alias": "Дата совершения строка",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "dat_sover_str"
+        },
+        {
+            "name": "tz1id",
+            "type": "esriFieldTypeString",
+            "alias": "Идентификатор заявления",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "tz1id"
+        },
+        {
+            "name": "reg_code",
+            "type": "esriFieldTypeString",
+            "alias": "Код района",
+            "domain": {
+                "type": "codedValue",
+                "name": "Region_code(txt)",
+                "description": "домен регионов для типа поля (txt)",
+                "codedValues": [
+                    {
+                        "name": "Кокшетау",
+                        "code": "191110"
+                    },
+                    {
+                        "name": "Степногорск",
+                        "code": "191118"
+                    },
+                    {
+                        "name": "Косши",
+                        "code": "191120"
+                    },
+                    {
+                        "name": "Аккольский район",
+                        "code": "191132"
+                    },
+                    {
+                        "name": "Aршалынский район",
+                        "code": "191134"
+                    },
+                    {
+                        "name": "Астраханский район",
+                        "code": "191136"
+                    },
+                    {
+                        "name": "Атбасарский район",
+                        "code": "191138"
+                    },
+                    {
+                        "name": "Буландынский район",
+                        "code": "191140"
+                    },
+                    {
+                        "name": "Егиндыкольский район",
+                        "code": "191144"
+                    },
+                    {
+                        "name": "Район Биржан сал",
+                        "code": "191145"
+                    },
+                    {
+                        "name": "Ерейментауский район",
+                        "code": "191146"
+                    },
+                    {
+                        "name": "Есильский район",
+                        "code": "191148"
+                    },
+                    {
+                        "name": "Жаксынский район",
+                        "code": "191152"
+                    },
+                    {
+                        "name": "Жаркаинский район",
+                        "code": "191154"
+                    },
+                    {
+                        "name": "Зерендинский район",
+                        "code": "191156"
+                    },
+                    {
+                        "name": "Коргалжынский район",
+                        "code": "191160"
+                    },
+                    {
+                        "name": "Сандыктауский район",
+                        "code": "191164"
+                    },
+                    {
+                        "name": "Целиноградский район",
+                        "code": "191166"
+                    },
+                    {
+                        "name": "Шортандинский район",
+                        "code": "191168"
+                    },
+                    {
+                        "name": "Щучинский район",
+                        "code": "191170"
+                    },
+                    {
+                        "name": "Актобе",
+                        "code": "191510"
+                    },
+                    {
+                        "name": "Алгинский район",
+                        "code": "191532"
+                    },
+                    {
+                        "name": "Айтекебийский район",
+                        "code": "191534"
+                    },
+                    {
+                        "name": "Байганинский район",
+                        "code": "191536"
+                    },
+                    {
+                        "name": "Каргалинский район",
+                        "code": "191540"
+                    },
+                    {
+                        "name": "Хобдинский район",
+                        "code": "191542"
+                    },
+                    {
+                        "name": "Мартукский район",
+                        "code": "191546"
+                    },
+                    {
+                        "name": "Мугалжарский район",
+                        "code": "191548"
+                    },
+                    {
+                        "name": "Уилский район",
+                        "code": "191552"
+                    },
+                    {
+                        "name": "Темирский район",
+                        "code": "191556"
+                    },
+                    {
+                        "name": "Хромтауский район",
+                        "code": "191560"
+                    },
+                    {
+                        "name": "Шалкарский район",
+                        "code": "191564"
+                    },
+                    {
+                        "name": "Иргизский район",
+                        "code": "191568"
+                    },
+                    {
+                        "name": "Талдыкорган",
+                        "code": "191910"
+                    },
+                    {
+                        "name": "Текели",
+                        "code": "191926"
+                    },
+                    {
+                        "name": "Аксуский район",
+                        "code": "191932"
+                    },
+                    {
+                        "name": "Алакольский район",
+                        "code": "191934"
+                    },
+                    {
+                        "name": "Балхашский район",
+                        "code": "191936"
+                    },
+                    {
+                        "name": "Енбекшиказахский район",
+                        "code": "191940"
+                    },
+                    {
+                        "name": "Жамбылский район",
+                        "code": "191942"
+                    },
+                    {
+                        "name": "Кербулакский район",
+                        "code": "191946"
+                    },
+                    {
+                        "name": "Коксуский район",
+                        "code": "191948"
+                    },
+                    {
+                        "name": "Каратальский район",
+                        "code": "191950"
+                    },
+                    {
+                        "name": "Карасайский район",
+                        "code": "191952"
+                    },
+                    {
+                        "name": "Панфиловский район",
+                        "code": "191956"
+                    },
+                    {
+                        "name": "Кегенский район",
+                        "code": "191958"
+                    },
+                    {
+                        "name": "Райымбекский район",
+                        "code": "191959"
+                    },
+                    {
+                        "name": "Саркандский район",
+                        "code": "191960"
+                    },
+                    {
+                        "name": "Талгарский район",
+                        "code": "191962"
+                    },
+                    {
+                        "name": "Ескельдинский район",
+                        "code": "191964"
+                    },
+                    {
+                        "name": "Уйгурский район",
+                        "code": "191966"
+                    },
+                    {
+                        "name": "Илийский район",
+                        "code": "191968"
+                    },
+                    {
+                        "name": "Атырау",
+                        "code": "192310"
+                    },
+                    {
+                        "name": "Жылыойский район",
+                        "code": "192336"
+                    },
+                    {
+                        "name": "Индерский район",
+                        "code": "192340"
+                    },
+                    {
+                        "name": "Исатайский район",
+                        "code": "192342"
+                    },
+                    {
+                        "name": "Курмангазинский район",
+                        "code": "192346"
+                    },
+                    {
+                        "name": "Кзылкогинский район",
+                        "code": "192348"
+                    },
+                    {
+                        "name": "Макатский район",
+                        "code": "192352"
+                    },
+                    {
+                        "name": "Махамбетский район",
+                        "code": "192356"
+                    },
+                    {
+                        "name": "Уральск",
+                        "code": "192710"
+                    },
+                    {
+                        "name": "Акжаикский район",
+                        "code": "192732"
+                    },
+                    {
+                        "name": "Бурлинский район",
+                        "code": "192736"
+                    },
+                    {
+                        "name": "Джангалинский район",
+                        "code": "192740"
+                    },
+                    {
+                        "name": "Жанибекский район",
+                        "code": "192742"
+                    },
+                    {
+                        "name": "Зеленовский район",
+                        "code": "192744"
+                    },
+                    {
+                        "name": "Казталовский район",
+                        "code": "192748"
+                    },
+                    {
+                        "name": "Каратобинский район",
+                        "code": "192750"
+                    },
+                    {
+                        "name": "Бокейординский район",
+                        "code": "192754"
+                    },
+                    {
+                        "name": "Сырымский район",
+                        "code": "192758"
+                    },
+                    {
+                        "name": "Таскалинский район",
+                        "code": "192760"
+                    },
+                    {
+                        "name": "Теректинский район",
+                        "code": "192762"
+                    },
+                    {
+                        "name": "Чингирлауский район",
+                        "code": "192766"
+                    },
+                    {
+                        "name": "Заводской район",
+                        "code": "193110"
+                    },
+                    {
+                        "name": "Центральный район",
+                        "code": "193111"
+                    },
+                    {
+                        "name": "Железнодорожный район",
+                        "code": "193112"
+                    },
+                    {
+                        "name": "Байзакский район",
+                        "code": "193136"
+                    },
+                    {
+                        "name": "Жамбылский район",
+                        "code": "193140"
+                    },
+                    {
+                        "name": "Жуалынский район",
+                        "code": "193142"
+                    },
+                    {
+                        "name": "Кордайский район",
+                        "code": "193148"
+                    },
+                    {
+                        "name": "район Турара Рыскулова",
+                        "code": "193150"
+                    },
+                    {
+                        "name": "Меркенский район",
+                        "code": "193154"
+                    },
+                    {
+                        "name": "Мойынкумский район",
+                        "code": "193156"
+                    },
+                    {
+                        "name": "Сарысуский район",
+                        "code": "193160"
+                    },
+                    {
+                        "name": "Таласский район",
+                        "code": "193162"
+                    },
+                    {
+                        "name": "Шуский район",
+                        "code": "193166"
+                    },
+                    {
+                        "name": "Караганда",
+                        "code": "193510"
+                    },
+                    {
+                        "name": "р-н им.Казыбек би",
+                        "code": "193511"
+                    },
+                    {
+                        "name": "Балхаш",
+                        "code": "193516"
+                    },
+                    {
+                        "name": "Жезказган",
+                        "code": "193518"
+                    },
+                    {
+                        "name": "Каражал",
+                        "code": "193520"
+                    },
+                    {
+                        "name": "Приозерск",
+                        "code": "193521"
+                    },
+                    {
+                        "name": "Сарань",
+                        "code": "193522"
+                    },
+                    {
+                        "name": "Сатпаев",
+                        "code": "193523"
+                    },
+                    {
+                        "name": "Темиртау",
+                        "code": "193524"
+                    },
+                    {
+                        "name": "Шахтинск",
+                        "code": "193528"
+                    },
+                    {
+                        "name": "Абайский район",
+                        "code": "193532"
+                    },
+                    {
+                        "name": "Актогайский район",
+                        "code": "193536"
+                    },
+                    {
+                        "name": "Бухар-Жырауский район",
+                        "code": "193540"
+                    },
+                    {
+                        "name": "Жанааркинский район",
+                        "code": "193544"
+                    },
+                    {
+                        "name": "Каркаралинский район",
+                        "code": "193548"
+                    },
+                    {
+                        "name": "Hуринский район",
+                        "code": "193552"
+                    },
+                    {
+                        "name": "Осакаровский район",
+                        "code": "193556"
+                    },
+                    {
+                        "name": "Улытауский район",
+                        "code": "193560"
+                    },
+                    {
+                        "name": "Шетский район",
+                        "code": "193564"
+                    },
+                    {
+                        "name": "Октябрьский р-н",
+                        "code": "193570"
+                    },
+                    {
+                        "name": "Костанай",
+                        "code": "193910"
+                    },
+                    {
+                        "name": "Южный район",
+                        "code": "193911"
+                    },
+                    {
+                        "name": "Северный район",
+                        "code": "193912"
+                    },
+                    {
+                        "name": "Аркалык",
+                        "code": "193916"
+                    },
+                    {
+                        "name": "Лисаковск",
+                        "code": "193920"
+                    },
+                    {
+                        "name": "Рудный",
+                        "code": "193924"
+                    },
+                    {
+                        "name": "Алтынсаринский район",
+                        "code": "193932"
+                    },
+                    {
+                        "name": "Амангельдинский район",
+                        "code": "193934"
+                    },
+                    {
+                        "name": "Аулиекольский район",
+                        "code": "193936"
+                    },
+                    {
+                        "name": "Денисовский район",
+                        "code": "193940"
+                    },
+                    {
+                        "name": "Жангильдинский район",
+                        "code": "193942"
+                    },
+                    {
+                        "name": "Житикаринский район",
+                        "code": "193944"
+                    },
+                    {
+                        "name": "Камыстинский район",
+                        "code": "193948"
+                    },
+                    {
+                        "name": "Карабалыкский район",
+                        "code": "193950"
+                    },
+                    {
+                        "name": "Карасуский район",
+                        "code": "193952"
+                    },
+                    {
+                        "name": "Костанайский район",
+                        "code": "193954"
+                    },
+                    {
+                        "name": "Мендыкаринский район",
+                        "code": "193956"
+                    },
+                    {
+                        "name": "Hаурзумский район",
+                        "code": "193958"
+                    },
+                    {
+                        "name": "Сарыкольский район",
+                        "code": "193962"
+                    },
+                    {
+                        "name": "Тарановский район",
+                        "code": "193964"
+                    },
+                    {
+                        "name": "Узункольский район",
+                        "code": "193966"
+                    },
+                    {
+                        "name": "Федоровский район",
+                        "code": "193968"
+                    },
+                    {
+                        "name": "Кызылорда",
+                        "code": "194310"
+                    },
+                    {
+                        "name": "Байконыр",
+                        "code": "194319"
+                    },
+                    {
+                        "name": "Аральский район",
+                        "code": "194332"
+                    },
+                    {
+                        "name": "Жалагашский район",
+                        "code": "194336"
+                    },
+                    {
+                        "name": "Жанакорганский район",
+                        "code": "194340"
+                    },
+                    {
+                        "name": "Казалинский район",
+                        "code": "194344"
+                    },
+                    {
+                        "name": "Кармакшинский район",
+                        "code": "194346"
+                    },
+                    {
+                        "name": "Сырдарьинский район",
+                        "code": "194348"
+                    },
+                    {
+                        "name": "Чиилийский район",
+                        "code": "194352"
+                    },
+                    {
+                        "name": "Актау",
+                        "code": "194710"
+                    },
+                    {
+                        "name": "Жанаозен",
+                        "code": "194718"
+                    },
+                    {
+                        "name": "Бейнеуский район",
+                        "code": "194736"
+                    },
+                    {
+                        "name": "Каракиянский район",
+                        "code": "194742"
+                    },
+                    {
+                        "name": "Мангистауский район",
+                        "code": "194746"
+                    },
+                    {
+                        "name": "Мунайлинский район",
+                        "code": "194750"
+                    },
+                    {
+                        "name": "Тупкараганский район",
+                        "code": "194752"
+                    },
+                    {
+                        "name": "Енбекшинский район",
+                        "code": "195110"
+                    },
+                    {
+                        "name": "Абайский район",
+                        "code": "195111"
+                    },
+                    {
+                        "name": "Аль-Фарабийский район",
+                        "code": "195112"
+                    },
+                    {
+                        "name": "Каратауский район",
+                        "code": "195113"
+                    },
+                    {
+                        "name": "Арысь",
+                        "code": "195116"
+                    },
+                    {
+                        "name": "Кентау",
+                        "code": "195120"
+                    },
+                    {
+                        "name": "Туркестан",
+                        "code": "195126"
+                    },
+                    {
+                        "name": "Арысский район",
+                        "code": "195132"
+                    },
+                    {
+                        "name": "район Байдибека",
+                        "code": "195136"
+                    },
+                    {
+                        "name": "Казыгуртский район",
+                        "code": "195140"
+                    },
+                    {
+                        "name": "Махтааральский район",
+                        "code": "195144"
+                    },
+                    {
+                        "name": "Жетысайский район",
+                        "code": "195145"
+                    },
+                    {
+                        "name": "Ордабасынский район",
+                        "code": "195146"
+                    },
+                    {
+                        "name": "Отрарский район",
+                        "code": "195148"
+                    },
+                    {
+                        "name": "Сайрамский район",
+                        "code": "195152"
+                    },
+                    {
+                        "name": "Сарыагашский район",
+                        "code": "195154"
+                    },
+                    {
+                        "name": "Келесский район",
+                        "code": "195155"
+                    },
+                    {
+                        "name": "Сузакский район",
+                        "code": "195156"
+                    },
+                    {
+                        "name": "Толебийский район",
+                        "code": "195158"
+                    },
+                    {
+                        "name": "Тюлькубасский район",
+                        "code": "195160"
+                    },
+                    {
+                        "name": "Шардаринский район",
+                        "code": "195164"
+                    },
+                    {
+                        "name": "Сауранский район",
+                        "code": "195170"
+                    },
+                    {
+                        "name": "Павлодар",
+                        "code": "195510"
+                    },
+                    {
+                        "name": "Южный район",
+                        "code": "195511"
+                    },
+                    {
+                        "name": "Северный район",
+                        "code": "195512"
+                    },
+                    {
+                        "name": "Центральный район",
+                        "code": "195513"
+                    },
+                    {
+                        "name": "Аксу",
+                        "code": "195516"
+                    },
+                    {
+                        "name": "Экибастуз",
+                        "code": "195522"
+                    },
+                    {
+                        "name": "Актогайский район",
+                        "code": "195532"
+                    },
+                    {
+                        "name": "Баянаульский район",
+                        "code": "195536"
+                    },
+                    {
+                        "name": "Железинский район",
+                        "code": "195542"
+                    },
+                    {
+                        "name": "Иртышский район",
+                        "code": "195546"
+                    },
+                    {
+                        "name": "Качирский район",
+                        "code": "195548"
+                    },
+                    {
+                        "name": "Лебяжинский район",
+                        "code": "195552"
+                    },
+                    {
+                        "name": "Майский район",
+                        "code": "195556"
+                    },
+                    {
+                        "name": "Павлодарский район",
+                        "code": "195560"
+                    },
+                    {
+                        "name": "Успенский район",
+                        "code": "195564"
+                    },
+                    {
+                        "name": "Щербактинский район",
+                        "code": "195568"
+                    },
+                    {
+                        "name": "Петропавловск",
+                        "code": "195910"
+                    },
+                    {
+                        "name": "г. Петропавловск 1-ОП",
+                        "code": "195911"
+                    },
+                    {
+                        "name": "г. Петропавловск 2-ОП",
+                        "code": "195912"
+                    },
+                    {
+                        "name": "Айыртауский район",
+                        "code": "195932"
+                    },
+                    {
+                        "name": "Акжарский район",
+                        "code": "195934"
+                    },
+                    {
+                        "name": "район Магжана Жумабаева",
+                        "code": "195936"
+                    },
+                    {
+                        "name": "Есильский район",
+                        "code": "195942"
+                    },
+                    {
+                        "name": "Жамбылский район",
+                        "code": "195946"
+                    },
+                    {
+                        "name": "Кызылжарский район",
+                        "code": "195950"
+                    },
+                    {
+                        "name": "Мамлютский район",
+                        "code": "195952"
+                    },
+                    {
+                        "name": "Район Шал акына",
+                        "code": "195956"
+                    },
+                    {
+                        "name": "Аккайынский район",
+                        "code": "195958"
+                    },
+                    {
+                        "name": "Тайыншинский район",
+                        "code": "195960"
+                    },
+                    {
+                        "name": "Тимирязевский район",
+                        "code": "195962"
+                    },
+                    {
+                        "name": "Уалихановский район",
+                        "code": "195964"
+                    },
+                    {
+                        "name": "район им.Габита Мусрепова",
+                        "code": "195966"
+                    },
+                    {
+                        "name": "Октябрьский район",
+                        "code": "196310"
+                    },
+                    {
+                        "name": "Ульбинский район",
+                        "code": "196311"
+                    },
+                    {
+                        "name": "Левобережный район",
+                        "code": "196312"
+                    },
+                    {
+                        "name": "Аягоз",
+                        "code": "196318"
+                    },
+                    {
+                        "name": "Зыряновск",
+                        "code": "196320"
+                    },
+                    {
+                        "name": "Курчатов",
+                        "code": "196322"
+                    },
+                    {
+                        "name": "Риддер",
+                        "code": "196324"
+                    },
+                    {
+                        "name": "Пригородный район",
+                        "code": "196327"
+                    },
+                    {
+                        "name": "Семипалатинск",
+                        "code": "196328"
+                    },
+                    {
+                        "name": "Ауэзовский район",
+                        "code": "196329"
+                    },
+                    {
+                        "name": "Затонский район",
+                        "code": "196330"
+                    },
+                    {
+                        "name": "Центральный район",
+                        "code": "196331"
+                    },
+                    {
+                        "name": "Абайский район",
+                        "code": "196332"
+                    },
+                    {
+                        "name": "Аягозский район",
+                        "code": "196334"
+                    },
+                    {
+                        "name": "Бескарагайский район",
+                        "code": "196336"
+                    },
+                    {
+                        "name": "Бородулихинский район",
+                        "code": "196338"
+                    },
+                    {
+                        "name": "Глубоковский район",
+                        "code": "196340"
+                    },
+                    {
+                        "name": "Жарминский район",
+                        "code": "196344"
+                    },
+                    {
+                        "name": "Зайсанский район",
+                        "code": "196346"
+                    },
+                    {
+                        "name": "Зыряновский район",
+                        "code": "196348"
+                    },
+                    {
+                        "name": "Кокпектинский район",
+                        "code": "196350"
+                    },
+                    {
+                        "name": "Курчумский район",
+                        "code": "196352"
+                    },
+                    {
+                        "name": "Катон-Карагайский район",
+                        "code": "196354"
+                    },
+                    {
+                        "name": "Тарбагатайский район",
+                        "code": "196358"
+                    },
+                    {
+                        "name": "Уланский район",
+                        "code": "196362"
+                    },
+                    {
+                        "name": "Урджарский район",
+                        "code": "196364"
+                    },
+                    {
+                        "name": "Шемонаихинский район",
+                        "code": "196368"
+                    },
+                    {
+                        "name": "район Алматы",
+                        "code": "197111"
+                    },
+                    {
+                        "name": "район Сарыарка",
+                        "code": "197113"
+                    },
+                    {
+                        "name": "район Есиль",
+                        "code": "197115"
+                    },
+                    {
+                        "name": "район Байконыр",
+                        "code": "197121"
+                    },
+                    {
+                        "name": "Приозерский гарнизон",
+                        "code": "197205"
+                    },
+                    {
+                        "name": "Алматинский гарнизон",
+                        "code": "197210"
+                    },
+                    {
+                        "name": "Акмолинский гарнизон",
+                        "code": "197215"
+                    },
+                    {
+                        "name": "Павлодарский гарнизон",
+                        "code": "197216"
+                    },
+                    {
+                        "name": "Актауский гарнизон",
+                        "code": "197220"
+                    },
+                    {
+                        "name": "Актюбинский гарнизон",
+                        "code": "197225"
+                    },
+                    {
+                        "name": "Западный регион",
+                        "code": "197230"
+                    },
+                    {
+                        "name": "Аягузский гарнизон",
+                        "code": "197235"
+                    },
+                    {
+                        "name": "Гвардейский гарнизон",
+                        "code": "197240"
+                    },
+                    {
+                        "name": "Южный регион",
+                        "code": "197245"
+                    },
+                    {
+                        "name": "Капшагайский гарнизон",
+                        "code": "197250"
+                    },
+                    {
+                        "name": "Центральный регион",
+                        "code": "197255"
+                    },
+                    {
+                        "name": "Костанайский гарнизон",
+                        "code": "197260"
+                    },
+                    {
+                        "name": "Сарыозекский гарнизон",
+                        "code": "197265"
+                    },
+                    {
+                        "name": "Восточный регион",
+                        "code": "197270"
+                    },
+                    {
+                        "name": "Пограничные войска",
+                        "code": "197275"
+                    },
+                    {
+                        "name": "Талдыкорганский гарнизон",
+                        "code": "197280"
+                    },
+                    {
+                        "name": "Уральский гарнизон",
+                        "code": "197285"
+                    },
+                    {
+                        "name": "Усть-Каменогорский гарнизон",
+                        "code": "197290"
+                    },
+                    {
+                        "name": "Сарыагашский гарнизон",
+                        "code": "197292"
+                    },
+                    {
+                        "name": "Шымкентский гарнизон",
+                        "code": "197295"
+                    },
+                    {
+                        "name": "Кызылординский гарнизон",
+                        "code": "197297"
+                    },
+                    {
+                        "name": "Петропавловский  гарнизон",
+                        "code": "197298"
+                    },
+                    {
+                        "name": "ст.Шенгельды",
+                        "code": "197401"
+                    },
+                    {
+                        "name": "ст.Шагыр",
+                        "code": "197402"
+                    },
+                    {
+                        "name": "ст.Жетысай",
+                        "code": "197403"
+                    },
+                    {
+                        "name": "ст.Аягуз",
+                        "code": "197404"
+                    },
+                    {
+                        "name": "ст.Жана-Семей",
+                        "code": "197405"
+                    },
+                    {
+                        "name": "ст.Жангuз-тобе",
+                        "code": "197406"
+                    },
+                    {
+                        "name": "ст.Шарск",
+                        "code": "197407"
+                    },
+                    {
+                        "name": "ст.Аул",
+                        "code": "197408"
+                    },
+                    {
+                        "name": "ст.Дегелен",
+                        "code": "197409"
+                    },
+                    {
+                        "name": "а/пнаст.Семей",
+                        "code": "197410"
+                    },
+                    {
+                        "name": "ст.Актогай",
+                        "code": "197411"
+                    },
+                    {
+                        "name": "ст.Талдыкорган",
+                        "code": "197412"
+                    },
+                    {
+                        "name": "а/п.Талдыкорган",
+                        "code": "197413"
+                    },
+                    {
+                        "name": "ст.Матай",
+                        "code": "197414"
+                    },
+                    {
+                        "name": "cm.Коксу",
+                        "code": "197415"
+                    },
+                    {
+                        "name": "ст.Бесколь",
+                        "code": "197416"
+                    },
+                    {
+                        "name": "ст.Шыгынак",
+                        "code": "197418"
+                    },
+                    {
+                        "name": "Талдыкорганский",
+                        "code": "197419"
+                    },
+                    {
+                        "name": "Жамбылский",
+                        "code": "197420"
+                    },
+                    {
+                        "name": "Дружбинский",
+                        "code": "197421"
+                    },
+                    {
+                        "name": "ст.Сарышаган",
+                        "code": "197422"
+                    },
+                    {
+                        "name": "ст.Тюлькубас",
+                        "code": "197423"
+                    },
+                    {
+                        "name": "ст.Казы-Курт",
+                        "code": "197424"
+                    },
+                    {
+                        "name": "ст.Манкент",
+                        "code": "197425"
+                    },
+                    {
+                        "name": "а/п.Шымкент",
+                        "code": "197426"
+                    },
+                    {
+                        "name": "ст.Шалабай",
+                        "code": "197427"
+                    },
+                    {
+                        "name": "ст.Лениногорск",
+                        "code": "197428"
+                    },
+                    {
+                        "name": "ст.Шокпар",
+                        "code": "197429"
+                    },
+                    {
+                        "name": "ст.Алматы-2",
+                        "code": "197430"
+                    },
+                    {
+                        "name": "Шуский",
+                        "code": "197431"
+                    },
+                    {
+                        "name": "Мунайлинский район",
+                        "code": "197450"
+                    },
+                    {
+                        "name": "Шымкентский",
+                        "code": "197451"
+                    },
+                    {
+                        "name": "Арысский",
+                        "code": "197452"
+                    },
+                    {
+                        "name": "Туркестанский",
+                        "code": "197453"
+                    },
+                    {
+                        "name": "Семипалатинский",
+                        "code": "197463"
+                    },
+                    {
+                        "name": "Восточно-Казахстанский",
+                        "code": "197464"
+                    },
+                    {
+                        "name": "ст.Алтынколь",
+                        "code": "197473"
+                    },
+                    {
+                        "name": "Авиационный",
+                        "code": "197475"
+                    },
+                    {
+                        "name": "Семиреченский",
+                        "code": "197476"
+                    },
+                    {
+                        "name": "Луговской",
+                        "code": "197477"
+                    },
+                    {
+                        "name": "ст.Сары-Озек",
+                        "code": "197478"
+                    },
+                    {
+                        "name": "ст.Капчагай",
+                        "code": "197479"
+                    },
+                    {
+                        "name": "ст.Отар",
+                        "code": "197480"
+                    },
+                    {
+                        "name": "ст.Шемолган",
+                        "code": "197481"
+                    },
+                    {
+                        "name": "ст.Бурное",
+                        "code": "197484"
+                    },
+                    {
+                        "name": "ст.Каратау",
+                        "code": "197485"
+                    },
+                    {
+                        "name": "а/п.Тараз",
+                        "code": "197486"
+                    },
+                    {
+                        "name": "ст.Шемонаuxа",
+                        "code": "197487"
+                    },
+                    {
+                        "name": "ст.Ново-Устькаменогорск",
+                        "code": "197488"
+                    },
+                    {
+                        "name": "а/п.Усть-Каменогорск",
+                        "code": "197489"
+                    },
+                    {
+                        "name": "ст.Серебрянка",
+                        "code": "197491"
+                    },
+                    {
+                        "name": "ст.3ыряновск",
+                        "code": "197492"
+                    },
+                    {
+                        "name": "ст.Тимур",
+                        "code": "197493"
+                    },
+                    {
+                        "name": "ст.Таты",
+                        "code": "197494"
+                    },
+                    {
+                        "name": "ст.Аспара",
+                        "code": "197495"
+                    },
+                    {
+                        "name": "ст.Мepке",
+                        "code": "197496"
+                    },
+                    {
+                        "name": "ст.Чалдовар",
+                        "code": "197497"
+                    },
+                    {
+                        "name": "ст.Сарыагаш",
+                        "code": "197498"
+                    },
+                    {
+                        "name": "Метрополитен",
+                        "code": "197499"
+                    },
+                    {
+                        "name": "г.Алматы",
+                        "code": "197510"
+                    },
+                    {
+                        "name": "Алмалинский р-н.",
+                        "code": "197511"
+                    },
+                    {
+                        "name": "Алатауский район",
+                        "code": "197512"
+                    },
+                    {
+                        "name": "Ауэзовский р-н.",
+                        "code": "197513"
+                    },
+                    {
+                        "name": "Бостандыкский р-н.",
+                        "code": "197514"
+                    },
+                    {
+                        "name": "Жетысуский р-н.",
+                        "code": "197515"
+                    },
+                    {
+                        "name": "Медеуский р-н.",
+                        "code": "197517"
+                    },
+                    {
+                        "name": "Турксибский р-н.",
+                        "code": "197519"
+                    },
+                    {
+                        "name": "Наурызбайский р-н",
+                        "code": "197541"
+                    },
+                    {
+                        "name": "ст. Актобе",
+                        "code": "197701"
+                    },
+                    {
+                        "name": "ст. Кандыагаш",
+                        "code": "197702"
+                    },
+                    {
+                        "name": "ст. Атырау",
+                        "code": "197703"
+                    },
+                    {
+                        "name": "ст. Мангистау",
+                        "code": "197704"
+                    },
+                    {
+                        "name": "ст. Кызылорда",
+                        "code": "197705"
+                    },
+                    {
+                        "name": "ст. Уральск",
+                        "code": "197706"
+                    },
+                    {
+                        "name": "а/энаст.Актобе",
+                        "code": "197708"
+                    },
+                    {
+                        "name": "ст.Оазис",
+                        "code": "197710"
+                    },
+                    {
+                        "name": "ст.Сай-утес",
+                        "code": "197711"
+                    },
+                    {
+                        "name": "а/э наст.Актау",
+                        "code": "197712"
+                    },
+                    {
+                        "name": "а/п наст.Атырау",
+                        "code": "197717"
+                    },
+                    {
+                        "name": "ст.Жалагаш",
+                        "code": "197722"
+                    },
+                    {
+                        "name": "ст.Ганушкино",
+                        "code": "197724"
+                    },
+                    {
+                        "name": "ст.Яйсан",
+                        "code": "197725"
+                    },
+                    {
+                        "name": "ст.Эмба",
+                        "code": "197729"
+                    },
+                    {
+                        "name": "ст.Шалкар",
+                        "code": "197730"
+                    },
+                    {
+                        "name": "ст.Шубар-Кудук",
+                        "code": "197731"
+                    },
+                    {
+                        "name": "ст.Караулкельды",
+                        "code": "197732"
+                    },
+                    {
+                        "name": "ст.Никель-Тау",
+                        "code": "197733"
+                    },
+                    {
+                        "name": "ст.Казахстан",
+                        "code": "197735"
+                    },
+                    {
+                        "name": "ст.Бейнеу",
+                        "code": "197737"
+                    },
+                    {
+                        "name": "ст.Сагиз",
+                        "code": "197739"
+                    },
+                    {
+                        "name": "ст.Макат",
+                        "code": "197740"
+                    },
+                    {
+                        "name": "ст.Кульсары",
+                        "code": "197741"
+                    },
+                    {
+                        "name": "ст.Саксаульск",
+                        "code": "197744"
+                    },
+                    {
+                        "name": "ст.Аральскоеморе",
+                        "code": "197745"
+                    },
+                    {
+                        "name": "ст.Казалuнск",
+                        "code": "197746"
+                    },
+                    {
+                        "name": "ст.Торетам",
+                        "code": "197748"
+                    },
+                    {
+                        "name": "ст.Жосалы",
+                        "code": "197749"
+                    },
+                    {
+                        "name": "ст.Шuели",
+                        "code": "197750"
+                    },
+                    {
+                        "name": "ст.Жанакорган",
+                        "code": "197751"
+                    },
+                    {
+                        "name": "а/п наст.Кызылорда",
+                        "code": "197752"
+                    },
+                    {
+                        "name": "ст.Айтеке-би",
+                        "code": "197753"
+                    },
+                    {
+                        "name": "ст.Шипово",
+                        "code": "197754"
+                    },
+                    {
+                        "name": "ст.Чингирлау",
+                        "code": "197755"
+                    },
+                    {
+                        "name": "а/п наст.Уральск",
+                        "code": "197756"
+                    },
+                    {
+                        "name": "ст.Астана",
+                        "code": "197801"
+                    },
+                    {
+                        "name": "ст.Атбасар",
+                        "code": "197802"
+                    },
+                    {
+                        "name": "ст.Есиль",
+                        "code": "197803"
+                    },
+                    {
+                        "name": "ст.Сороковая",
+                        "code": "197804"
+                    },
+                    {
+                        "name": "ст. Аркалык",
+                        "code": "197805"
+                    },
+                    {
+                        "name": "ст. Анар",
+                        "code": "197806"
+                    },
+                    {
+                        "name": "ст.Державинка",
+                        "code": "197807"
+                    },
+                    {
+                        "name": "ст.Ерейментау",
+                        "code": "197808"
+                    },
+                    {
+                        "name": "ст.Жаксы",
+                        "code": "197809"
+                    },
+                    {
+                        "name": "ст.Жалтыр",
+                        "code": "197810"
+                    },
+                    {
+                        "name": "ст.Шортанды",
+                        "code": "197811"
+                    },
+                    {
+                        "name": "ст.Караганда-Сортировочная",
+                        "code": "197812"
+                    },
+                    {
+                        "name": "ст.Балхаш",
+                        "code": "197813"
+                    },
+                    {
+                        "name": "ст.Жезказган",
+                        "code": "197814"
+                    },
+                    {
+                        "name": "ст.Караганда-Пассажирская",
+                        "code": "197815"
+                    },
+                    {
+                        "name": "а/п Караганда",
+                        "code": "197816"
+                    },
+                    {
+                        "name": "ст.Моинты",
+                        "code": "197817"
+                    },
+                    {
+                        "name": "ст.Агадырь",
+                        "code": "197818"
+                    },
+                    {
+                        "name": "ст.Жана-Арка",
+                        "code": "197819"
+                    },
+                    {
+                        "name": "ст.Жарык",
+                        "code": "197820"
+                    },
+                    {
+                        "name": "ст.Осакаровка",
+                        "code": "197821"
+                    },
+                    {
+                        "name": "ст.Саяк",
+                        "code": "197822"
+                    },
+                    {
+                        "name": "ст.Кокшетау",
+                        "code": "197823"
+                    },
+                    {
+                        "name": "ст.Боровое",
+                        "code": "197824"
+                    },
+                    {
+                        "name": "ст.Ак-коль",
+                        "code": "197825"
+                    },
+                    {
+                        "name": "ст.Володаровка",
+                        "code": "197826"
+                    },
+                    {
+                        "name": "ст.Макинка",
+                        "code": "197827"
+                    },
+                    {
+                        "name": "ст.Новоишимская",
+                        "code": "197828"
+                    },
+                    {
+                        "name": "ст.Пресногорковская",
+                        "code": "197829"
+                    },
+                    {
+                        "name": "ст.Таинша",
+                        "code": "197830"
+                    },
+                    {
+                        "name": "ст.Тальщик",
+                        "code": "197831"
+                    },
+                    {
+                        "name": "а/п Кокшетау",
+                        "code": "197832"
+                    },
+                    {
+                        "name": "ст.Костанай",
+                        "code": "197833"
+                    },
+                    {
+                        "name": "ст. Кушмурун",
+                        "code": "197834"
+                    },
+                    {
+                        "name": "ст.Тобол",
+                        "code": "197835"
+                    },
+                    {
+                        "name": "ст.Аман-Карагай",
+                        "code": "197836"
+                    },
+                    {
+                        "name": "ст.Новоурицкий",
+                        "code": "197837"
+                    },
+                    {
+                        "name": "ст.Жаркуль",
+                        "code": "197838"
+                    },
+                    {
+                        "name": "ст.Железнорудная",
+                        "code": "197839"
+                    },
+                    {
+                        "name": "ст.Челгаши",
+                        "code": "197840"
+                    },
+                    {
+                        "name": "а/п Костанай",
+                        "code": "197841"
+                    },
+                    {
+                        "name": "ст. Павлодар",
+                        "code": "197842"
+                    },
+                    {
+                        "name": "ст.Экибастуз",
+                        "code": "197843"
+                    },
+                    {
+                        "name": "ст.Аксу",
+                        "code": "197844"
+                    },
+                    {
+                        "name": "а/п г.Павлодар",
+                        "code": "197845"
+                    },
+                    {
+                        "name": "ст.Петропавловск",
+                        "code": "197846"
+                    },
+                    {
+                        "name": "ст.Мамлютка",
+                        "code": "197847"
+                    },
+                    {
+                        "name": "ст.Булаево",
+                        "code": "197848"
+                    },
+                    {
+                        "name": "ст.Смирново",
+                        "code": "197849"
+                    },
+                    {
+                        "name": "а/п г.Петропавловск",
+                        "code": "197850"
+                    },
+                    {
+                        "name": "а/п г.Астана",
+                        "code": "197851"
+                    },
+                    {
+                        "name": "ст.Вишневка",
+                        "code": "197852"
+                    },
+                    {
+                        "name": "а/п г.Жезказган",
+                        "code": "197853"
+                    },
+                    {
+                        "name": "ст.Щарбакты",
+                        "code": "197854"
+                    },
+                    {
+                        "name": "ст.Астана-2",
+                        "code": "197855"
+                    },
+                    {
+                        "name": "Енбекшинский район",
+                        "code": "197910"
+                    },
+                    {
+                        "name": "Абайский район",
+                        "code": "197911"
+                    },
+                    {
+                        "name": "Аль-Фарабийский район",
+                        "code": "197912"
+                    },
+                    {
+                        "name": "Каратауский район",
+                        "code": "197913"
+                    },
+                    {
+                        "name": "Акмолинская обл (спецобъект) г.Степногорск",
+                        "code": "198711"
+                    },
+                    {
+                        "name": "Актюбинская обл.(спецобъект) Эмба-5",
+                        "code": "198715"
+                    },
+                    {
+                        "name": "Карагандинская обл.(спецобъект) г.Приозерск",
+                        "code": "198735"
+                    },
+                    {
+                        "name": "Кызылординская обл.(спецобъект) г.Байконыр",
+                        "code": "198743"
+                    },
+                    {
+                        "name": "Мангистауская обл.(спецобъект) г.Актау",
+                        "code": "198747"
+                    },
+                    {
+                        "name": "ЮКО (спецобъект) п.Таукент",
+                        "code": "198751"
+                    },
+                    {
+                        "name": "ЮКО (спецобъект) п.Степной",
+                        "code": "198752"
+                    },
+                    {
+                        "name": "ЮКО (спецобъект) п.Шиели",
+                        "code": "198753"
+                    },
+                    {
+                        "name": "СКО (спецобъект) г.Петропавловск",
+                        "code": "198759"
+                    },
+                    {
+                        "name": "ВКО (спецобъект) г.Усть-Каменогорск",
+                        "code": "198763"
+                    },
+                    {
+                        "name": "ВКО (спецобъект) г.Курчатов",
+                        "code": "198764"
+                    },
+                    {
+                        "name": "г.Алматы (спецобъект)",
+                        "code": "198775"
+                    },
+                    {
+                        "name": "Конаев",
+                        "code": "191916"
+                    },
+                    {
+                        "name": "Семей",
+                        "code": "191010"
+                    },
+                    {
+                        "name": "Курчатов",
+                        "code": "191018"
+                    },
+                    {
+                        "name": "Абайский район",
+                        "code": "191032"
+                    },
+                    {
+                        "name": "район Ақсуат",
+                        "code": "191034"
+                    },
+                    {
+                        "name": "Аягозский район",
+                        "code": "191036"
+                    },
+                    {
+                        "name": "Бескарагайский район",
+                        "code": "191038"
+                    },
+                    {
+                        "name": "Бородулихинский район",
+                        "code": "191040"
+                    },
+                    {
+                        "name": "Жарминский район",
+                        "code": "191042"
+                    },
+                    {
+                        "name": "Кокпектинский район",
+                        "code": "191044"
+                    },
+                    {
+                        "name": "Урджарский район",
+                        "code": "191046"
+                    },
+                    {
+                        "name": "Талдыкорган",
+                        "code": "193310"
+                    },
+                    {
+                        "name": "Текели",
+                        "code": "193318"
+                    },
+                    {
+                        "name": "Аксуский район",
+                        "code": "193332"
+                    },
+                    {
+                        "name": "Алакольский район",
+                        "code": "193334"
+                    },
+                    {
+                        "name": "Ескельдинский район",
+                        "code": "193336"
+                    },
+                    {
+                        "name": "Кербулакский район",
+                        "code": "193340"
+                    },
+                    {
+                        "name": "Коксуский район",
+                        "code": "193342"
+                    },
+                    {
+                        "name": "Каратальский район",
+                        "code": "193344"
+                    },
+                    {
+                        "name": "Панфиловский район",
+                        "code": "193346"
+                    },
+                    {
+                        "name": "Саркандский район",
+                        "code": "193348"
+                    },
+                    {
+                        "name": "Жезказган",
+                        "code": "196210"
+                    },
+                    {
+                        "name": "Каражал",
+                        "code": "196218"
+                    },
+                    {
+                        "name": "Сатпаев",
+                        "code": "196220"
+                    },
+                    {
+                        "name": "Жанааркинский район",
+                        "code": "196236"
+                    },
+                    {
+                        "name": "Улытауский район",
+                        "code": "196238"
+                    },
+                    {
+                        "name": "район Самар",
+                        "code": "196356"
+                    },
+                    {
+                        "name": "г. Шу",
+                        "code": "193167"
+                    },
+                    {
+                        "name": "г. Астана",
+                        "code": "197110"
+                    },
+                    {
+                        "name": "Ауэзовский район",
+                        "code": "191029"
+                    },
+                    {
+                        "name": "Центральный район",
+                        "code": "191031"
+                    },
+                    {
+                        "name": "Затонский район",
+                        "code": "191030"
+                    },
+                    {
+                        "name": "район Туран",
+                        "code": "197914"
+                    },
+                    {
+                        "name": "район Нура",
+                        "code": "197123"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 40,
+            "defaultValue": null,
+            "modelName": "reg_code"
+        },
+        {
+            "name": "city_code",
+            "type": "esriFieldTypeString",
+            "alias": "Код города",
+            "domain": {
+                "type": "codedValue",
+                "name": "area_txt",
+                "description": "Области текстовое поле",
+                "codedValues": [
+                    {
+                        "name": "Акмолинская обл.",
+                        "code": "1911"
+                    },
+                    {
+                        "name": "Актюбинская обл.",
+                        "code": "1915"
+                    },
+                    {
+                        "name": "Алматинская обл.",
+                        "code": "1919"
+                    },
+                    {
+                        "name": "Атырауская обл.",
+                        "code": "1923"
+                    },
+                    {
+                        "name": "Западно-Казахстанская обл.",
+                        "code": "1927"
+                    },
+                    {
+                        "name": "Жамбылская обл.",
+                        "code": "1931"
+                    },
+                    {
+                        "name": "Карагандинская обл.",
+                        "code": "1935"
+                    },
+                    {
+                        "name": "Костанайская обл.",
+                        "code": "1939"
+                    },
+                    {
+                        "name": "Кызылординская обл.",
+                        "code": "1943"
+                    },
+                    {
+                        "name": "Мангистауская обл.",
+                        "code": "1947"
+                    },
+                    {
+                        "name": "Туркестанская обл.",
+                        "code": "1951"
+                    },
+                    {
+                        "name": "Павлодарская обл.",
+                        "code": "1955"
+                    },
+                    {
+                        "name": "Северо-Казахстанская обл.",
+                        "code": "1959"
+                    },
+                    {
+                        "name": "Восточно-Казахстанская обл.",
+                        "code": "1963"
+                    },
+                    {
+                        "name": "г. Алматы",
+                        "code": "1975"
+                    },
+                    {
+                        "name": "г. Шымкент",
+                        "code": "1979"
+                    },
+                    {
+                        "name": "г. Байконыр",
+                        "code": "1987"
+                    },
+                    {
+                        "name": "г. Астана",
+                        "code": "1971"
+                    },
+                    {
+                        "name": "Абайская обл.",
+                        "code": "1910"
+                    },
+                    {
+                        "name": "Жетысуская обл.",
+                        "code": "1933"
+                    },
+                    {
+                        "name": "Улытауская обл.",
+                        "code": "1962"
+                    },
+                    {
+                        "name": "Республиканский уровень",
+                        "code": "1900"
+                    },
+                    {
+                        "name": "Западный транспортный регион",
+                        "code": "1977"
+                    },
+                    {
+                        "name": "Центральный транспортный регион",
+                        "code": "1978"
+                    },
+                    {
+                        "name": "Юго-Восточный транспортный регион",
+                        "code": "1974"
+                    },
+                    {
+                        "name": "Военное управление",
+                        "code": "1972"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 20,
+            "defaultValue": null,
+            "modelName": "city_code"
+        },
+        {
+            "name": "org_code",
+            "type": "esriFieldTypeString",
+            "alias": "Код органа",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 40,
+            "defaultValue": null,
+            "modelName": "ORG_CODE"
+        },
+        {
+            "name": "fz1r18p5",
+            "type": "esriFieldTypeString",
+            "alias": "Место совершения, улица",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 200,
+            "defaultValue": null,
+            "modelName": "fz1r18p5"
+        },
+        {
+            "name": "fz1r18p6",
+            "type": "esriFieldTypeString",
+            "alias": "Место совершения, дом",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 200,
+            "defaultValue": null,
+            "modelName": "fz1r18p6"
+        },
+        {
+            "name": "transgression",
+            "type": "esriFieldTypeString",
+            "alias": "преступление/проступок",
+            "domain": {
+                "type": "codedValue",
+                "name": "transgression",
+                "description": "преступления / проступки",
+                "codedValues": [
+                    {
+                        "name": "преступления",
+                        "code": "5"
+                    },
+                    {
+                        "name": "проступки",
+                        "code": "6"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 1,
+            "defaultValue": null,
+            "modelName": "transgression"
+        },
+        {
+            "name": "organ_kz",
+            "type": "esriFieldTypeString",
+            "alias": "Орган регистрации KZ",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 300,
+            "defaultValue": null,
+            "modelName": "ORGAN_KZ"
+        },
+        {
+            "name": "fe1r29p1_id",
+            "type": "esriFieldTypeString",
+            "alias": "Место преступления",
+            "domain": {
+                "type": "codedValue",
+                "name": "FE1R29P1_ru",
+                "description": "справочник FE1R29P1",
+                "codedValues": [
+                    {
+                        "name": "улица (площадь)",
+                        "code": "001"
+                    },
+                    {
+                        "name": "рынок",
+                        "code": "002"
+                    },
+                    {
+                        "name": "вокзал железнодорожный",
+                        "code": "003"
+                    },
+                    {
+                        "name": "вокзал морской (речной)",
+                        "code": "004"
+                    },
+                    {
+                        "name": "автовокзал",
+                        "code": "005"
+                    },
+                    {
+                        "name": "аэровокзал",
+                        "code": "006"
+                    },
+                    {
+                        "name": "не огороженный двор дома (за искл.частных)",
+                        "code": "007"
+                    },
+                    {
+                        "name": "парк (сквер)",
+                        "code": "008"
+                    },
+                    {
+                        "name": "пляж",
+                        "code": "009"
+                    },
+                    {
+                        "name": "аэропорт",
+                        "code": "010"
+                    },
+                    {
+                        "name": "перрон",
+                        "code": "011"
+                    },
+                    {
+                        "name": "прочие уличные",
+                        "code": "012"
+                    },
+                    {
+                        "name": "водоем",
+                        "code": "013"
+                    },
+                    {
+                        "name": "лес, лесопосадка",
+                        "code": "014"
+                    },
+                    {
+                        "name": "пустырь, овраг",
+                        "code": "015"
+                    },
+                    {
+                        "name": "автостоянка",
+                        "code": "016"
+                    },
+                    {
+                        "name": "АЗС",
+                        "code": "017"
+                    },
+                    {
+                        "name": "частный двор, в т.ч. огороженный",
+                        "code": "018"
+                    },
+                    {
+                        "name": "квартира",
+                        "code": "021"
+                    },
+                    {
+                        "name": "дом",
+                        "code": "022"
+                    },
+                    {
+                        "name": "подъезд жилого дома",
+                        "code": "023"
+                    },
+                    {
+                        "name": "лифтовой отсек",
+                        "code": "024"
+                    },
+                    {
+                        "name": "чердак",
+                        "code": "025"
+                    },
+                    {
+                        "name": "подвал",
+                        "code": "026"
+                    },
+                    {
+                        "name": "гостиница",
+                        "code": "027"
+                    },
+                    {
+                        "name": "общежитие",
+                        "code": "028"
+                    },
+                    {
+                        "name": "медучреждение",
+                        "code": "029"
+                    },
+                    {
+                        "name": "дом отдыха (санаторий)",
+                        "code": "030"
+                    },
+                    {
+                        "name": "дача",
+                        "code": "031"
+                    },
+                    {
+                        "name": "казарма",
+                        "code": "032"
+                    },
+                    {
+                        "name": "подсобное помещение жилых домов",
+                        "code": "033"
+                    },
+                    {
+                        "name": "хранилище",
+                        "code": "034"
+                    },
+                    {
+                        "name": "вагон",
+                        "code": "035"
+                    },
+                    {
+                        "name": "контейнер",
+                        "code": "036"
+                    },
+                    {
+                        "name": "гараж",
+                        "code": "037"
+                    },
+                    {
+                        "name": "детсад (ясли)",
+                        "code": "038"
+                    },
+                    {
+                        "name": "сарай",
+                        "code": "039"
+                    },
+                    {
+                        "name": "гардероб",
+                        "code": "041"
+                    },
+                    {
+                        "name": "склад",
+                        "code": "043"
+                    },
+                    {
+                        "name": "учебное заведение",
+                        "code": "044"
+                    },
+                    {
+                        "name": "другие помещения",
+                        "code": "045"
+                    },
+                    {
+                        "name": "ночной клуб",
+                        "code": "046"
+                    },
+                    {
+                        "name": "ломбард",
+                        "code": "048"
+                    },
+                    {
+                        "name": "объект игорного бизнеса",
+                        "code": "049"
+                    },
+                    {
+                        "name": "тамбур вагона пассажирского поезда",
+                        "code": "050"
+                    },
+                    {
+                        "name": "магазин частный",
+                        "code": "053"
+                    },
+                    {
+                        "name": "военторг",
+                        "code": "054"
+                    },
+                    {
+                        "name": "магазин комиссионный",
+                        "code": "055"
+                    },
+                    {
+                        "name": "буфет",
+                        "code": "056"
+                    },
+                    {
+                        "name": "киоск",
+                        "code": "057"
+                    },
+                    {
+                        "name": "кафе (ресторан)",
+                        "code": "058"
+                    },
+                    {
+                        "name": "банк межгосударственный",
+                        "code": "061"
+                    },
+                    {
+                        "name": "банк государственный",
+                        "code": "062"
+                    },
+                    {
+                        "name": "банк акционерный",
+                        "code": "063"
+                    },
+                    {
+                        "name": "банк с иностр. участием",
+                        "code": "064"
+                    },
+                    {
+                        "name": "банк частный",
+                        "code": "065"
+                    },
+                    {
+                        "name": "акционерное общество",
+                        "code": "067"
+                    },
+                    {
+                        "name": "дочерний акционерный банк",
+                        "code": "069"
+                    },
+                    {
+                        "name": "кассы предприятий и учреждений",
+                        "code": "071"
+                    },
+                    {
+                        "name": "обменный пункт",
+                        "code": "072"
+                    },
+                    {
+                        "name": "офис",
+                        "code": "081"
+                    },
+                    {
+                        "name": "база",
+                        "code": "082"
+                    },
+                    {
+                        "name": "аптека",
+                        "code": "083"
+                    },
+                    {
+                        "name": "отделение связи",
+                        "code": "084"
+                    },
+                    {
+                        "name": "музей",
+                        "code": "085"
+                    },
+                    {
+                        "name": "выставочный зал",
+                        "code": "086"
+                    },
+                    {
+                        "name": "места отправления религиозного культа",
+                        "code": "087"
+                    },
+                    {
+                        "name": "театр к/театр",
+                        "code": "088"
+                    },
+                    {
+                        "name": "ВУЗ",
+                        "code": "089"
+                    },
+                    {
+                        "name": "общественный транспорт",
+                        "code": "091"
+                    },
+                    {
+                        "name": "транспорт ж/д",
+                        "code": "092"
+                    },
+                    {
+                        "name": "транспорт воздушный",
+                        "code": "093"
+                    },
+                    {
+                        "name": "транспорт морской,речной",
+                        "code": "094"
+                    },
+                    {
+                        "name": "транспорт электрический",
+                        "code": "095"
+                    },
+                    {
+                        "name": "транспорт автомобильный",
+                        "code": "096"
+                    },
+                    {
+                        "name": "транспорт личный",
+                        "code": "097"
+                    },
+                    {
+                        "name": "транспорт другой механизированный",
+                        "code": "098"
+                    },
+                    {
+                        "name": "автострада (трасса)",
+                        "code": "099"
+                    },
+                    {
+                        "name": "берег реки",
+                        "code": "019"
+                    },
+                    {
+                        "name": "тепловые трассы",
+                        "code": "020"
+                    },
+                    {
+                        "name": "канализационные колодцы",
+                        "code": "073"
+                    },
+                    {
+                        "name": "кладбище",
+                        "code": "074"
+                    },
+                    {
+                        "name": "производственные помещения",
+                        "code": "075"
+                    },
+                    {
+                        "name": "промышеленные помещения",
+                        "code": "076"
+                    },
+                    {
+                        "name": "служебные кабинеты",
+                        "code": "077"
+                    },
+                    {
+                        "name": "подсобные помещения кухни",
+                        "code": "078"
+                    },
+                    {
+                        "name": "строящиеся или заброшенные здания",
+                        "code": "080"
+                    },
+                    {
+                        "name": "подземные коммуникации",
+                        "code": "090"
+                    },
+                    {
+                        "name": "пастбище",
+                        "code": "079"
+                    },
+                    {
+                        "name": "дом культуры",
+                        "code": "060"
+                    },
+                    {
+                        "name": "метрополитен",
+                        "code": "059"
+                    },
+                    {
+                        "name": "другое место",
+                        "code": "100"
+                    },
+                    {
+                        "name": "из салона авто",
+                        "code": "101"
+                    },
+                    {
+                        "name": "торговый дом",
+                        "code": "102"
+                    },
+                    {
+                        "name": "военные объекты",
+                        "code": "103"
+                    }
+                ],
+                "mergePolicy": "esriMPTDefaultValue",
+                "splitPolicy": "esriSPTDefaultValue"
+            },
+            "editable": true,
+            "nullable": true,
+            "length": 3,
+            "defaultValue": null,
+            "modelName": "FE1R29P1_ID"
+        },
+        {
+            "name": "fe1r32p1",
+            "type": "esriFieldTypeString",
+            "alias": "Объект посягательства",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "length": 100,
+            "defaultValue": null,
+            "modelName": "FE1R32P1"
+        },
+        {
+            "name": "weekday",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "День недели",
+            "domain": null,
+            "editable": true,
+            "nullable": true,
+            "defaultValue": null,
+            "modelName": "weekday"
+        },
+        {
+            "name": "globalid",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "globalid",
+            "domain": null,
+            "editable": false,
+            "nullable": false,
+            "length": 38,
+            "defaultValue": null,
+            "modelName": "GLOBALID"
+        }
+    ],
+    "geometryField": {
+        "name": "shape",
+        "type": "esriFieldTypeGeometry",
+        "alias": "shape",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "shape"
+    },
+    "indexes": [
+        {
+            "name": "r401_sde_rowid_uk",
+            "fields": "objectid",
+            "isAscending": true,
+            "isUnique": true,
+            "description": ""
+        },
+        {
+            "name": "a196_ix1",
+            "fields": "shape",
+            "isAscending": true,
+            "isUnique": true,
+            "description": ""
+        }
+    ],
+    "datesInUnknownTimezone": false,
+    "dateFieldsTimeReference": {
+        "timeZone": "UTC",
+        "respectsDaylightSaving": false
+    },
+    "preferredTimeReference": null,
+    "types": [
+        {
+            "id": "0",
+            "name": "не определено",
+            "domains": {
+                "crime_code": {
+                    "type": "inherited"
+                },
+                "hard_code": {
+                    "type": "inherited"
+                },
+                "reg_code": {
+                    "type": "inherited"
+                },
+                "city_code": {
+                    "type": "inherited"
+                },
+                "transgression": {
+                    "type": "inherited"
+                },
+                "fe1r29p1_id": {
+                    "type": "inherited"
+                }
+            },
+            "templates": [
+                {
+                    "name": "0",
+                    "description": "",
+                    "prototype": {
+                        "attributes": {
+                            "weekday": null,
+                            "fe1r32p1": null,
+                            "id": null,
+                            "yr": null,
+                            "period": null,
+                            "crime_code": null,
+                            "time_period": null,
+                            "hard_code": "0",
+                            "ud": null,
+                            "organ": null,
+                            "dat_vozb": null,
+                            "dat_sover": null,
+                            "stat": null,
+                            "dat_vozb_str": null,
+                            "dat_sover_str": null,
+                            "tz1id": null,
+                            "reg_code": null,
+                            "city_code": null,
+                            "org_code": null,
+                            "fz1r18p5": null,
+                            "fz1r18p6": null,
+                            "transgression": null,
+                            "organ_kz": null,
+                            "fe1r29p1_id": null
+                        }
+                    },
+                    "drawingTool": "esriFeatureEditToolPoint"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "name": "небольшой тяжести",
+            "domains": {
+                "crime_code": {
+                    "type": "inherited"
+                },
+                "hard_code": {
+                    "type": "inherited"
+                },
+                "reg_code": {
+                    "type": "inherited"
+                },
+                "city_code": {
+                    "type": "inherited"
+                },
+                "transgression": {
+                    "type": "inherited"
+                },
+                "fe1r29p1_id": {
+                    "type": "inherited"
+                }
+            },
+            "templates": [
+                {
+                    "name": "небольшой тяжести",
+                    "description": "",
+                    "prototype": {
+                        "attributes": {
+                            "hard_code": "1"
+                        }
+                    },
+                    "drawingTool": "esriFeatureEditToolPoint"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "средней тяжести",
+            "domains": {
+                "crime_code": {
+                    "type": "inherited"
+                },
+                "hard_code": {
+                    "type": "inherited"
+                },
+                "reg_code": {
+                    "type": "inherited"
+                },
+                "city_code": {
+                    "type": "inherited"
+                },
+                "transgression": {
+                    "type": "inherited"
+                },
+                "fe1r29p1_id": {
+                    "type": "inherited"
+                }
+            },
+            "templates": [
+                {
+                    "name": "средней тяжести",
+                    "description": "",
+                    "prototype": {
+                        "attributes": {
+                            "hard_code": "2"
+                        }
+                    },
+                    "drawingTool": "esriFeatureEditToolPoint"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "тяжкие",
+            "domains": {
+                "crime_code": {
+                    "type": "inherited"
+                },
+                "hard_code": {
+                    "type": "inherited"
+                },
+                "reg_code": {
+                    "type": "inherited"
+                },
+                "city_code": {
+                    "type": "inherited"
+                },
+                "transgression": {
+                    "type": "inherited"
+                },
+                "fe1r29p1_id": {
+                    "type": "inherited"
+                }
+            },
+            "templates": [
+                {
+                    "name": "тяжкие",
+                    "description": "",
+                    "prototype": {
+                        "attributes": {
+                            "hard_code": "3"
+                        }
+                    },
+                    "drawingTool": "esriFeatureEditToolPoint"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "особо тяжкие",
+            "domains": {
+                "crime_code": {
+                    "type": "inherited"
+                },
+                "hard_code": {
+                    "type": "inherited"
+                },
+                "reg_code": {
+                    "type": "inherited"
+                },
+                "city_code": {
+                    "type": "inherited"
+                },
+                "transgression": {
+                    "type": "inherited"
+                },
+                "fe1r29p1_id": {
+                    "type": "inherited"
+                }
+            },
+            "templates": [
+                {
+                    "name": "особо тяжкие",
+                    "description": "",
+                    "prototype": {
+                        "attributes": {
+                            "hard_code": "4"
+                        }
+                    },
+                    "drawingTool": "esriFeatureEditToolPoint"
+                }
+            ]
+        }
+    ],
+    "templates": [],
+    "maxRecordCount": 5000,
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedExportFormats": "sqlite,filegdb,shapefile",
+    "capabilities": "Query,Update,Uploads,Editing",
+    "useStandardizedQueries": true,
+    "supportedSpatialRelationships": [
+        "esriSpatialRelIntersects",
+        "esriSpatialRelContains",
+        "esriSpatialRelCrosses",
+        "esriSpatialRelEnvelopeIntersects",
+        "esriSpatialRelIndexIntersects",
+        "esriSpatialRelOverlaps",
+        "esriSpatialRelTouches",
+        "esriSpatialRelWithin",
+        "esriSpatialRelRelation"
+    ],
+    "standardMaxRecordCount": 32000,
+    "tileMaxRecordCount": 8000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "maxRecordCountFactor": 1,
+    "serviceItemId": "6e992d644cdb411caff2df4e2ab37040"
+}

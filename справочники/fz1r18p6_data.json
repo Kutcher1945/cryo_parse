@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fz1r18p6",
+        "type": "esriFieldTypeString",
+        "alias": "Место совершения, дом",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 200,
+        "defaultValue": null,
+        "modelName": "fz1r18p6"
+    }
+]

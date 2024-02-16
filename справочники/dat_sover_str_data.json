@@ -1,0 +1,13 @@
+[
+    {
+        "name": "dat_sover_str",
+        "type": "esriFieldTypeString",
+        "alias": "Дата совершения строка",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "dat_sover_str"
+    }
+]

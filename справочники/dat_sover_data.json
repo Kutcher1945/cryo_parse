@@ -1,0 +1,13 @@
+[
+    {
+        "name": "dat_sover",
+        "type": "esriFieldTypeDate",
+        "alias": "Дата совершения преступления",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 8,
+        "defaultValue": null,
+        "modelName": "dat_sover"
+    }
+]

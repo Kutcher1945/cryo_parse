@@ -1,0 +1,29 @@
+[
+    {
+        "name": "transgression",
+        "type": "esriFieldTypeString",
+        "alias": "преступление/проступок",
+        "domain": {
+            "type": "codedValue",
+            "name": "transgression",
+            "description": "преступления / проступки",
+            "codedValues": [
+                {
+                    "name": "преступления",
+                    "code": "5"
+                },
+                {
+                    "name": "проступки",
+                    "code": "6"
+                }
+            ],
+            "mergePolicy": "esriMPTDefaultValue",
+            "splitPolicy": "esriSPTDefaultValue"
+        },
+        "editable": true,
+        "nullable": true,
+        "length": 1,
+        "defaultValue": null,
+        "modelName": "transgression"
+    }
+]

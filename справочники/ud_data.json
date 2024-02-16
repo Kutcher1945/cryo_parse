@@ -1,0 +1,13 @@
+[
+    {
+        "name": "ud",
+        "type": "esriFieldTypeString",
+        "alias": "№ КУЗИ",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "ud"
+    }
+]

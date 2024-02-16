@@ -1,0 +1,12 @@
+[
+    {
+        "name": "yr",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Год",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "yr"
+    }
+]
