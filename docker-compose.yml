@@ -1,11 +1,21 @@
 version: '3'
 services:
-  crime_everyday:
+  crime_everyday2:
     container_name: crime_everyday2
     build:
       context: .
       dockerfile: Dockerfile.crime_everyday
     command: python -u crime_everyday2.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  crime_everyday1:
+    container_name: crime_everyday1
+    build:
+      context: .
+      dockerfile: Dockerfile.crime_everyday1
+    command: python -u crime_everyday.py
     environment:
       - TZ=Asia/Almaty
     restart: always

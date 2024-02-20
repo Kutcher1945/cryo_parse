@@ -6,3 +6,4 @@ lxml
 Levenshtein
 pandas
 numpy
+tqdm
