@@ -157,7 +157,8 @@ def fetch_and_insert_data(start_date, end_date):
             FROM address_buildings AS s
             ORDER BY r.geom <-> s.marker
             LIMIT 1
-        );
+        )
+        WHERE address_id IS NULL;
         """
         cur.execute(update_address_id_query)
 
@@ -165,7 +166,8 @@ def fetch_and_insert_data(start_date, end_date):
         UPDATE crimes
         SET full_address = address_buildings.full_address
         FROM address_buildings
-        WHERE crimes.address_id = address_buildings.id;
+        WHERE crimes.address_id = address_buildings.id
+        AND crimes.full_address IS NULL;
         """
         cur.execute(update_full_address_query)
 
@@ -173,9 +175,19 @@ def fetch_and_insert_data(start_date, end_date):
         UPDATE crimes
         SET district_id = address_buildings.district_id
         FROM address_buildings
-        WHERE crimes.address_id = address_buildings.id;
+        WHERE crimes.address_id = address_buildings.id
+        AND crimes.district_id IS NULL;
         """
         cur.execute(update_district_id_query)
+
+        update_latitude_and_longitude_query = """
+        UPDATE crimes
+        SET
+          latitude = ST_Y(geom::geometry),
+          longitude = ST_X(geom::geometry)
+        WHERE latitude IS NULL AND longitude IS NULL
+        """
+        cur.execute(update_latitude_and_longitude_query)
 
         conn.commit()
         cur.close()
