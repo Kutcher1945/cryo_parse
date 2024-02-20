@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y libpq-dev
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY crime_everyday.py .
+COPY crime_everyday2.py .
 
-CMD [ "python", "-u", "crime_everyday.py" ]
+CMD [ "python", "-u", "crime_everyday2.py" ]
