@@ -2,8 +2,6 @@ import psycopg2
 import json
 import datetime
 import requests
-import schedule
-import time
 
 # Function to fetch and insert data for a specific date range
 def fetch_and_insert_data(start_date, end_date):
@@ -157,8 +155,7 @@ def fetch_and_insert_data(start_date, end_date):
             FROM address_buildings AS s
             ORDER BY r.geom <-> s.marker
             LIMIT 1
-        )
-        WHERE address_id IS NULL;
+        );
         """
         cur.execute(update_address_id_query)
 
@@ -166,8 +163,7 @@ def fetch_and_insert_data(start_date, end_date):
         UPDATE crimes
         SET full_address = address_buildings.full_address
         FROM address_buildings
-        WHERE crimes.address_id = address_buildings.id
-        AND crimes.full_address IS NULL;
+        WHERE crimes.address_id = address_buildings.id;
         """
         cur.execute(update_full_address_query)
 
@@ -175,43 +171,18 @@ def fetch_and_insert_data(start_date, end_date):
         UPDATE crimes
         SET district_id = address_buildings.district_id
         FROM address_buildings
-        WHERE crimes.address_id = address_buildings.id
-        AND crimes.district_id IS NULL;
+        WHERE crimes.address_id = address_buildings.id;
         """
         cur.execute(update_district_id_query)
-
-        update_latitude_and_longitude_query = """
-        UPDATE crimes
-        SET
-          latitude = ST_Y(geom::geometry),
-          longitude = ST_X(geom::geometry)
-        WHERE latitude IS NULL AND longitude IS NULL
-        """
-        cur.execute(update_latitude_and_longitude_query)
 
         conn.commit()
         cur.close()
         conn.close()
 
-# Define a job to fetch and insert data daily
-def job():
-    # Define the start and end dates for the previous day
-    previous_date = datetime.datetime.now() - datetime.timedelta(days=1)
-    start_date = datetime.datetime(previous_date.year, previous_date.month, previous_date.day)
-    end_date = start_date + datetime.timedelta(days=1) - datetime.timedelta(seconds=1)
-    
-    # Fetch and insert data for the previous day
-    fetch_and_insert_data(start_date, end_date)
-    print("Parsing done.")
+# Define the start and end dates for January 2015
+start_date = datetime.datetime(2015, 1, 1)
+end_date = datetime.datetime(2015, 1, 31)
 
-# Schedule the job to run daily at 2:00 AM
-schedule.every().day.at("02:00").do(job)
-
-# Run the scheduler loop indefinitely
-while True:
-    next_run = schedule.next_run()
-    time_until_next_run = next_run - datetime.datetime.now()
-    hours_until_next_run = time_until_next_run.total_seconds() / 3600
-    print(f"Next parse in {hours_until_next_run:.2f} hours at {next_run}")
-    schedule.run_pending()
-    time.sleep(60)  # Sleep for 60 seconds before checking again
+# Fetch and insert data for January 2015
+fetch_and_insert_data(start_date, end_date)
+print("Data inserted successfully.")
