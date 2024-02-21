@@ -201,7 +201,7 @@ def fetch_and_insert_data(start_date, end_date):
             END
         WHERE quarter_id IS NULL;
         """
-        cur.execute(update_latitude_and_longitude_query)
+        cur.execute(update_quarter_query)
 
         conn.commit()
         cur.close()
