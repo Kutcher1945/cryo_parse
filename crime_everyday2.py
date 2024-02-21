@@ -189,6 +189,20 @@ def fetch_and_insert_data(start_date, end_date):
         """
         cur.execute(update_latitude_and_longitude_query)
 
+        update_quarter_query = """
+        UPDATE crimes
+        SET quarter_id = 
+            CASE 
+                WHEN period BETWEEN 1 AND 3 THEN 1
+                WHEN period BETWEEN 4 AND 6 THEN 2
+                WHEN period BETWEEN 7 AND 9 THEN 3
+                WHEN period BETWEEN 10 AND 12 THEN 4
+                ELSE quarter_id
+            END
+        WHERE quarter_id IS NULL;
+        """
+        cur.execute(update_latitude_and_longitude_query)
+
         conn.commit()
         cur.close()
         conn.close()
