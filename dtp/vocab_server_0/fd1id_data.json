@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1id",
+        "type": "esriFieldTypeString",
+        "alias": "Идентификатор записи о ДТП",
+        "domain": null,
+        "editable": true,
+        "nullable": false,
+        "length": 64,
+        "defaultValue": null,
+        "modelName": "fd1id"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "dtp_stab",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "dtp_stab",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "dtp_stab"
+    }
+]

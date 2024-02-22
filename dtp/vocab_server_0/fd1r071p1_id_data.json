@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r071p1_id",
+        "type": "esriFieldTypeString",
+        "alias": "Зафиксированные не достатки",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "fd1r071p1_id"
+    }
+]

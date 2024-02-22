@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r07p2",
+        "type": "esriFieldTypeString",
+        "alias": "Освещенность",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 200,
+        "defaultValue": null,
+        "modelName": "fd1r07p2"
+    }
+]

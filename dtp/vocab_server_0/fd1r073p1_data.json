@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r073p1",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Общее кол-во полос",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r073p1"
+    }
+]

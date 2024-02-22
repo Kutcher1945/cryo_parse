@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r071p1",
+        "type": "esriFieldTypeString",
+        "alias": "Зафиксированные недостатки улично-дорожной сети (наименования)",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 4000,
+        "defaultValue": null,
+        "modelName": "fd1r071p1"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r074p1",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Ограничение скорости на участке",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r074p1"
+    }
+]

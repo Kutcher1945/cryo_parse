@@ -1,0 +1,69 @@
+[
+    {
+        "name": "fd1r08p1",
+        "type": "esriFieldTypeString",
+        "alias": "Вид ДТП",
+        "domain": {
+            "type": "codedValue",
+            "name": "FD1R08P1",
+            "description": "Вид ДТП fd1r08p1",
+            "codedValues": [
+                {
+                    "name": "столкновение",
+                    "code": "01"
+                },
+                {
+                    "name": "опрокидывание",
+                    "code": "02"
+                },
+                {
+                    "name": "наезд на стоящее транспортное средство",
+                    "code": "03"
+                },
+                {
+                    "name": "наезд на препятствие",
+                    "code": "04"
+                },
+                {
+                    "name": "наезд на пешехода",
+                    "code": "05"
+                },
+                {
+                    "name": "наезд на гужевой транспорт",
+                    "code": "07"
+                },
+                {
+                    "name": "наезд на животное",
+                    "code": "08"
+                },
+                {
+                    "name": "иные виды происшествий",
+                    "code": "09"
+                },
+                {
+                    "name": "боковое столкновение",
+                    "code": "10"
+                },
+                {
+                    "name": "попутное столкновение",
+                    "code": "11"
+                },
+                {
+                    "name": "падение пассажира",
+                    "code": "12"
+                },
+                {
+                    "name": "наезд на велосипедиста",
+                    "code": "06"
+                }
+            ],
+            "mergePolicy": "esriMPTDefaultValue",
+            "splitPolicy": "esriSPTDefaultValue"
+        },
+        "editable": true,
+        "nullable": true,
+        "length": 2,
+        "defaultValue": null,
+        "modelName": "fd1r08p1"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "vehicle_category",
+        "type": "esriFieldTypeString",
+        "alias": "Категория транспорта",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 300,
+        "defaultValue": null,
+        "modelName": "vehicle_category"
+    }
+]

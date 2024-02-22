@@ -1,0 +1,13 @@
+[
+    {
+        "name": "globalid",
+        "type": "esriFieldTypeGlobalID",
+        "alias": "globalid",
+        "domain": null,
+        "editable": false,
+        "nullable": false,
+        "length": 38,
+        "defaultValue": null,
+        "modelName": "globalid"
+    }
+]

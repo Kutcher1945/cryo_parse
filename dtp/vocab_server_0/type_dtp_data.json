@@ -1,0 +1,12 @@
+[
+    {
+        "name": "type_dtp",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Тип ДТП (1- административное 2 - проступки)",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "type_dtp"
+    }
+]

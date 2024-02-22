@@ -1,0 +1,12 @@
+[
+    {
+        "name": "dtp_reg",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "dtp_reg",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "dtp_reg"
+    }
+]

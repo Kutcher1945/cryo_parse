@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r061p0",
+        "type": "esriFieldTypeString",
+        "alias": "Индекс трассы",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 3,
+        "defaultValue": null,
+        "modelName": "fd1r061p0"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r041p1",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "День недели соверешения ДТП (число 1-7)",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r041p1"
+    }
+]

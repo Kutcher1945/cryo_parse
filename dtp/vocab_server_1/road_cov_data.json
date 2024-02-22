@@ -1,0 +1,13 @@
+[
+    {
+        "name": "road_cov",
+        "type": "esriFieldTypeString",
+        "alias": "road_cov",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 50,
+        "defaultValue": null,
+        "modelName": "road_cov"
+    }
+]

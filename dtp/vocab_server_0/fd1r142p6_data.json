@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r142p6",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Пол виновника (1-МУЖ. 2-ЖЕН)",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r142p6"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "road",
+        "type": "esriFieldTypeString",
+        "alias": "road",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 100,
+        "defaultValue": null,
+        "modelName": "road"
+    }
+]

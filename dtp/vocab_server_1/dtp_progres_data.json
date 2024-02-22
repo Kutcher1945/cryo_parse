@@ -1,0 +1,12 @@
+[
+    {
+        "name": "dtp_progres",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "dtp_progres",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "dtp_progres"
+    }
+]

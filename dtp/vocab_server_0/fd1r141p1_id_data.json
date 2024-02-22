@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r141p1_id",
+        "type": "esriFieldTypeString",
+        "alias": "Состояние виновного",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 1,
+        "defaultValue": null,
+        "modelName": "fd1r141p1_id"
+    }
+]

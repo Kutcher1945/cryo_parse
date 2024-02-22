@@ -1,0 +1,13 @@
+[
+    {
+        "name": "ref",
+        "type": "esriFieldTypeString",
+        "alias": "ref",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 10,
+        "defaultValue": null,
+        "modelName": "ref"
+    }
+]

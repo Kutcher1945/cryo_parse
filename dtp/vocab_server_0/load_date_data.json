@@ -1,0 +1,13 @@
+[
+    {
+        "name": "load_date",
+        "type": "esriFieldTypeDate",
+        "alias": "Дата загрузки в ГИС",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 8,
+        "defaultValue": null,
+        "modelName": "load_date"
+    }
+]

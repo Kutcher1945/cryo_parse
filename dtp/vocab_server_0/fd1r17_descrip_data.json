@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r17_descrip",
+        "type": "esriFieldTypeString",
+        "alias": "Квалификация (описание статьи)",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 600,
+        "defaultValue": null,
+        "modelName": "fd1r17_descrip"
+    }
+]

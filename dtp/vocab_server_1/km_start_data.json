@@ -1,0 +1,12 @@
+[
+    {
+        "name": "km_start",
+        "type": "esriFieldTypeDouble",
+        "alias": "km_start",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "km_start"
+    }
+]

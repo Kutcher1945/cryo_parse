@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r061p2",
+        "type": "esriFieldTypeDouble",
+        "alias": "км",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r061p2"
+    }
+]

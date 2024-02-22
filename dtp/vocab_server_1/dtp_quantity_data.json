@@ -1,0 +1,12 @@
+[
+    {
+        "name": "dtp_quantity",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "dtp_quantity",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "dtp_quantity"
+    }
+]

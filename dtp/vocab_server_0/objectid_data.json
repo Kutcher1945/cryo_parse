@@ -1,0 +1,12 @@
+[
+    {
+        "name": "objectid",
+        "type": "esriFieldTypeOID",
+        "alias": "objectid",
+        "domain": null,
+        "editable": false,
+        "nullable": false,
+        "defaultValue": null,
+        "modelName": "objectid"
+    }
+]

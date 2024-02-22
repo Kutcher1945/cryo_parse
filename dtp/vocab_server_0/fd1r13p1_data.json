@@ -1,0 +1,12 @@
+[
+    {
+        "name": "fd1r13p1",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Количество раненых",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "defaultValue": null,
+        "modelName": "fd1r13p1"
+    }
+]

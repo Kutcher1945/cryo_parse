@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r061p1",
+        "type": "esriFieldTypeString",
+        "alias": "Участок дороги",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 150,
+        "defaultValue": null,
+        "modelName": "fd1r061p1"
+    }
+]

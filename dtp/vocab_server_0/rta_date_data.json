@@ -1,0 +1,13 @@
+[
+    {
+        "name": "rta_date",
+        "type": "esriFieldTypeDate",
+        "alias": "Дата совершения ДТП",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 8,
+        "defaultValue": null,
+        "modelName": "rta_date"
+    }
+]

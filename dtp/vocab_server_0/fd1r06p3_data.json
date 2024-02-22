@@ -1,0 +1,13 @@
+[
+    {
+        "name": "fd1r06p3",
+        "type": "esriFieldTypeString",
+        "alias": "Место совершения ДТП, Населенный пункт",
+        "domain": null,
+        "editable": true,
+        "nullable": true,
+        "length": 200,
+        "defaultValue": null,
+        "modelName": "fd1r06p3"
+    }
+]
