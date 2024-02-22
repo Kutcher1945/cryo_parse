@@ -145,7 +145,7 @@ def job():
     print("Parsing done.")
 
 # Schedule the job to run daily at 2:00 AM
-schedule.every().day.at("02:00").do(job)
+schedule.every().day.at("02:30").do(job)
 
 # Schedule the printing of time left every minute
 schedule.every().minute.do(print_time_left)
