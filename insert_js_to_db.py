@@ -18,12 +18,12 @@ conn = psycopg2.connect(
 )
 
 # Load your JSON data
-with open('transgression_data.json', 'r') as file:
+with open('fd1r08p1_data.json', 'r') as file:
     data = json.load(file)
 
 # SQL statement to insert data into the table
 insert_query = """
-    INSERT INTO crime_transgression_code (name, code)
+    INSERT INTO road_traffic_incident_type_code (name, code)
     VALUES (%s, %s)
 """
 

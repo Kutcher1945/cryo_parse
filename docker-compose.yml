@@ -19,3 +19,13 @@ services:
     environment:
       - TZ=Asia/Almaty
     restart: always
+
+  road_traffic:
+    container_name: road_traffic
+    build:
+      context: .
+      dockerfile: Dockerfile.road_traffic
+    command: python -u road_traffic.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always

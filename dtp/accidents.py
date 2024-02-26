@@ -20,11 +20,11 @@ params = {
 
 # Establish a connection to the PostgreSQL database
 conn = psycopg2.connect(
-    dbname="*",
-    user="*",
-    password="*",
-    host="*",
-    port="*"
+    dbname="rwh_gis_database",
+    user="rwh_analytics",
+    password="4HPzQt2HyU@",
+    host="172.30.227.205",
+    port="5439"
 )
 
 # Create a cursor object
@@ -100,6 +100,11 @@ INSERT INTO accidents (
 """
 
 total_records = 0
+existing_objectids = set()
+
+# Fetch existing objectids from the database to avoid duplicates
+cur.execute("SELECT objectid FROM accidents")
+existing_objectids.update(row[0] for row in cur.fetchall())
 
 # Process data in batches
 while True:
@@ -118,6 +123,11 @@ while True:
 
         for feature in tqdm(features, desc="Inserting records", unit="record"):
             if 'properties' in feature:
+                objectid = feature['properties']['objectid']
+                # Skip insertion if objectid already exists
+                if objectid in existing_objectids:
+                    continue
+
                 rta_date_timestamp = feature['properties']['rta_date'] / 1000  # Convert milliseconds to seconds
                 rta_date = datetime.datetime.fromtimestamp(rta_date_timestamp)
                 
@@ -126,7 +136,7 @@ while True:
         
                 # Extract values from the feature
                 values = (
-                    feature['properties']['objectid'],
+                    objectid,
                     feature['properties']['fd1r08p1'],
                     rta_date,
                     feature['properties']['fd1id'],
@@ -172,7 +182,8 @@ while True:
         
                 # Execute the insert query
                 cur.execute(insert_query, values)
-
+                existing_objectids.add(objectid)  # Update existing objectids set
+        
         # Increment the result offset for the next batch
         params["resultOffset"] += params["resultRecordCount"]
     else:
