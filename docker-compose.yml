@@ -20,6 +20,16 @@ services:
       - TZ=Asia/Almaty
     restart: always
 
+  crime_everyday3:
+    container_name: crime_everyday3
+    build:
+      context: .
+      dockerfile: Dockerfile.crime_everyday3
+    command: python -u crime_everyday3.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
   road_traffic:
     container_name: road_traffic
     build:
