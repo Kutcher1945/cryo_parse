@@ -10,7 +10,7 @@ def fetch_and_insert_data(start_date, end_date):
         dbname="sitcenter_postgis_datalake",
         user="la_noche_estrellada",
         password="Cfq,thNb13@",
-        host="172.30.227.205",
+        host="10.100.200.150",
         port="5439"
     )
     cur = conn.cursor()

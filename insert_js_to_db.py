@@ -5,7 +5,7 @@ import json
 DB_NAME = 'sitcenter_postgis_datalake'
 DB_USER = 'la_noche_estrellada'
 DB_PASSWORD = 'Cfq,thNb13@'
-DB_HOST = '172.30.227.205'
+DB_HOST = '10.100.200.150'
 DB_PORT = '5439'
 
 # Connect to the PostgreSQL database

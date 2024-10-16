@@ -94,7 +94,7 @@ conn = psycopg2.connect(
     dbname="rwh_datalake",
     user="rwh_analytics",
     password="4HPzQt2HyU@",
-    host="172.30.227.205",
+    host="10.100.200.150",
     port="5439"
 )
 

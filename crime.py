@@ -4,21 +4,23 @@ import datetime
 import requests
 from tqdm import tqdm
 
-# Function to fetch and insert data for a given year, month, and start day
-def fetch_and_insert_data(year, month, start_day):
+# Function to fetch and insert data for a given year, month, and day
+def fetch_and_insert_data(year, month, day):
+    print(f"Fetching and inserting data for {year}-{month:02}-{day:02}")
     # Define the URL
     url = f"https://gis.kgp.kz/arcgis/rest/services/KPSSU/crime/FeatureServer/1/query"
     
     # Define the query parameters
     params = {
-        'f': 'json',
-        'returnIdsOnly': False,
-        'returnGeometry': True,
-        'spatialRel': 'esriSpatialRelIntersects',
-        'outSR': 4326,
-        'outFields': '*',
-        'where': f"dat_sover>=timestamp '{year}-{month:02}-{start_day:02} 00:00:00' AND dat_sover<=timestamp '{year}-{month:02}-{start_day + 19:02} 23:59:59' AND (city_code='1975')"
+    'f': 'json',
+    'returnIdsOnly': False,
+    'returnGeometry': True,
+    'spatialRel': 'esriSpatialRelIntersects',
+    'outSR': 4326,
+    'outFields': '*',
+    'where': f"dat_sover >= timestamp '{year}-{month:02}-{day:02} 00:00:00' AND dat_sover < timestamp '{year}-{month:02}-{day+1:02} 00:00:00' AND (city_code='1975')"
     }
+
     
     try:
         # Send GET request to fetch data
@@ -46,7 +48,7 @@ def fetch_and_insert_data(year, month, start_day):
                     
                     # Define your INSERT statement
                     insert_query = """
-                    INSERT INTO z_crimes (objectid, yr, period, crime_code, time_period, hard_code,
+                    INSERT INTO zz_crimes (objectid, yr, period, crime_code, time_period, hard_code,
                                           ud, organ, dat_vozb, dat_sover, stat, dat_vozb_str, dat_sover_str,
                                           tz1id, reg_code, city_code, org_code, fz1r18p5, fz1r18p6, transgression,
                                           organ_kz, fe1r29p1_id, fe1r32p1, weekday, globalid, geom)
@@ -66,18 +68,18 @@ def fetch_and_insert_data(year, month, start_day):
                     cur.execute(insert_query, attributes)
             
             else:
-                print(f"No features found for {year}-{month:02}.")
+                print(f"No features found for {year}-{month:02}-{day:02}.")
         else:
-            print(f"Failed to fetch data for {year}-{month:02}. Status code: {response.status_code}")
+            print(f"Failed to fetch data for {year}-{month:02}-{day:02}. Status code: {response.status_code}")
     except requests.exceptions.RequestException as e:
-        print(f"Error occurred while fetching data for {year}-{month:02}: {e}")
+        print(f"Error occurred while fetching data for {year}-{month:02}-{day:02}: {e}")
 
 # Connect to your PostgreSQL/PostGIS database
 conn = psycopg2.connect(
-    dbname="rwh_gis_database",
-    user="rwh_analytics",
-    password="4HPzQt2HyU@",
-    host="172.30.227.205",
+    dbname="sitcenter_postgis_datalake",
+    user="la_noche_estrellada",
+    password="Cfq,thNb13@",
+    host="10.100.200.150",
     port="5439"
 )
 
@@ -86,7 +88,7 @@ cur = conn.cursor()
 
 # Create table if it does not exist
 create_table_query = """
-CREATE TABLE IF NOT EXISTS z_crimes (
+CREATE TABLE IF NOT EXISTS zz_crimes (
     id SERIAL PRIMARY KEY,
     objectid INT,
     yr INT,
@@ -134,10 +136,15 @@ for year in tqdm(range(start_year, 2025), desc="Years"):
         months_range = range(1, 13)
         
     for month in tqdm(months_range, desc="Months"):
-        # Iterate over each 20-day period in the month
-        for start_day in range(1, 32, 20):
-            fetch_and_insert_data(year, month, start_day)
-            conn.commit()  # Commit after each batch of data
+        # Determine the number of days in the current month
+        num_days = 31 if month in [1, 3, 5, 7, 8, 10, 12] else 30 if month in [4, 6, 9, 11] else 29 if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0) else 28
+        
+        # Iterate over each day in the month
+        for day in tqdm(range(1, num_days + 1), desc="Days"):
+            fetch_and_insert_data(year, month, day)
+            conn.commit()  # Commit
+
+
 
 # Close the cursor and connection
 cur.close()
